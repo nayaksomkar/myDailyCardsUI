@@ -2,13 +2,21 @@ import React from 'react';
 import { getCategories } from '../../services/data';
 import useServiceHealth from '../../hooks/useServiceHealth';
 
-export default function Sidebar({ activePage, onNavigate, days, currentDayId, onSelectDay }) {
+export default function Sidebar({ activePage, onNavigate, days, currentDayId, onSelectDay, onClose }) {
   const categories = getCategories();
   const { services, onlineCount, total, loading } = useServiceHealth();
   const overall = loading ? 'checking' : (onlineCount === total ? 'online' : (onlineCount === 0 ? 'offline' : 'slow'));
 
   return (
     <aside className="sidebar">
+      {onClose && (
+        <button className="sidebar-close" onClick={onClose} aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      )}
       <div className="sidebar-brand">
         <span className="sidebar-brand-icon">✦</span>
         <span className="sidebar-brand-name">myDailyCards</span>

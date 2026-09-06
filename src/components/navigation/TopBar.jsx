@@ -1,9 +1,17 @@
 import React from 'react';
 
-export default function TopBar({ activeTab, onTabChange, onSearch }) {
+export default function TopBar({ activeTab, onTabChange, onSearch, onMenu }) {
   return (
     <header className="top-bar">
       <div className="top-bar-content">
+        <button className="top-bar-menu" onClick={onMenu} aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+
         <div className="top-bar-brand">
           <span className="brand-icon">✦</span>
           <span className="brand-name">myDailyCards</span>
@@ -39,6 +47,27 @@ export default function TopBar({ activeTab, onTabChange, onSearch }) {
           </button>
         </div>
       </div>
+
+      <nav className="top-bar-tabs-mobile" aria-label="Feed tabs">
+        <button
+          className={`top-bar-tab ${activeTab === 'foryou' ? 'active' : ''}`}
+          onClick={() => onTabChange('foryou')}
+        >
+          For You
+        </button>
+        <button
+          className={`top-bar-tab ${activeTab === 'following' ? 'active' : ''}`}
+          onClick={() => onTabChange('following')}
+        >
+          Following
+        </button>
+        <button
+          className={`top-bar-tab ${activeTab === 'latest' ? 'active' : ''}`}
+          onClick={() => onTabChange('latest')}
+        >
+          Latest
+        </button>
+      </nav>
     </header>
   );
 }

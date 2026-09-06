@@ -23,6 +23,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('foryou');
   const [currentDayId, setCurrentDayId] = useState(null);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedStoryId, setSelectedStoryId] = useState(null);
   const [explainStoryId, setExplainStoryId] = useState(null);
   const [discussionStoryId, setDiscussionStoryId] = useState(null);
@@ -106,15 +107,24 @@ export default function App() {
         activeTab={activeTab}
         onTabChange={setActiveTab}
         onSearch={() => setSearchOpen(true)}
+        onMenu={() => setSidebarOpen(true)}
       />
 
-      <div className="app-body">
+      {sidebarOpen && (
+        <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} aria-hidden="true" />
+      )}
+
+      <div className={`app-body ${sidebarOpen ? 'sidebar-open' : ''}`}>
         <Sidebar
           activePage={activePage}
-          onNavigate={handleNavigate}
+          onNavigate={(page) => {
+            handleNavigate(page);
+            setSidebarOpen(false);
+          }}
           days={days}
           currentDayId={currentDayId}
           onSelectDay={handleSelectDay}
+          onClose={() => setSidebarOpen(false)}
         />
 
         <main className="app-main">

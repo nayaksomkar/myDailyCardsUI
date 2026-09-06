@@ -2942,43 +2942,263 @@ body {
    Responsive
    ============================================ */
 
+/* ---- Mobile-first base (≤ 767px) ---- */
+.top-bar {
+    height: auto;
+    min-height: var(--topbar-height);
+}
+
+.top-bar-content {
+    gap: 8px;
+    padding: 0 12px;
+}
+
+.top-bar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid var(--border-primary);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.top-bar-menu svg {
+    width: 20px;
+    height: 20px;
+}
+
+.top-bar-tabs {
+    display: none;
+}
+
+.top-bar-tabs-mobile {
+    display: flex;
+    gap: 4px;
+    padding: 0 12px 8px;
+    background: var(--bg-overlay);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.top-bar-tabs-mobile::-webkit-scrollbar {
+    display: none;
+}
+
+.top-bar-tabs-mobile .top-bar-tab {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.brand-name {
+    font-size: 1.05rem;
+}
+
+.app-body {
+    flex-direction: column;
+    padding: 0 12px;
+    gap: 0;
+    max-width: 100%;
+}
+
+.app-main {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: calc(var(--bottom-nav-height) + 24px);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    max-width: 85vw;
+    z-index: 110;
+    background: var(--bg-elevated);
+    border-right: 1px solid var(--border-primary);
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 16px 32px;
+    box-shadow: var(--shadow-xl);
+    display: block;
+}
+
+.app-body.sidebar-open .sidebar {
+    transform: translateX(0);
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 105;
+    animation: fadeIn 0.2s ease;
+}
+
+.sidebar-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+    margin-bottom: 8px;
+    border: 1px solid var(--border-primary);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.sidebar-close svg {
+    width: 18px;
+    height: 18px;
+}
+
+.app-right-rail {
+    display: none;
+}
+
+.day-selector {
+    padding: 12px 0;
+}
+
+.day-selector-track {
+    margin: 0 -12px;
+    padding: 4px 12px;
+}
+
+.day-chip {
+    min-width: 64px;
+    padding: 10px 14px;
+}
+
+.day-chip-date {
+    font-size: 1rem;
+}
+
+.post-source {
+    padding: 14px 16px 10px;
+}
+
+.post-source-avatar {
+    width: 36px;
+    height: 36px;
+}
+
+.post-content {
+    padding: 14px 16px 10px;
+}
+
+.post-title {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    word-break: break-word;
+}
+
+.post-actions {
+    padding: 10px 16px;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.post-action-btn span {
+    display: none;
+}
+
+.post-explain-row {
+    padding: 10px 16px 14px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.post-explain-btn {
+    width: 100%;
+}
+
+.story-reader-panel {
+    max-width: 100%;
+}
+
+.story-reader-content {
+    padding: 20px 16px;
+}
+
+.story-reader-title {
+    font-size: 1.3rem;
+    line-height: 1.25;
+}
+
+.search-overlay-panel {
+    margin: 0;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    max-height: 90vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.chat-page {
+    height: calc(100vh - var(--topbar-height) - var(--bottom-nav-height) - 48px);
+}
+
+.service-status-panel {
+    width: calc(100vw - 32px);
+    max-width: 320px;
+}
+
+/* ---- Tablet (768–1023px) ---- */
 @media (min-width: 768px) {
+    .top-bar {
+        height: var(--topbar-height);
+    }
+
+    .top-bar-content {
+        padding: 0 20px;
+    }
+
+    .top-bar-tabs-mobile {
+        display: none;
+    }
+
+    .top-bar-tabs {
+        display: flex;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
+    .app-body {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .app-main {
+        max-width: var(--feed-max-width);
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
     .bottom-nav {
         display: none;
     }
 
-    .app-main {
-        padding-bottom: 40px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .sidebar {
-        display: block;
-    }
-
-    .app-right-rail {
-        display: block;
-    }
-}
-
-@media (min-width: 1200px) {
-    .app-body {
-        gap: 32px;
-    }
-}
-
-@media (max-width: 640px) {
-    .app-body {
-        padding: 0 16px;
-    }
-
-    .top-bar-content {
-        padding: 0 16px;
-    }
-
-    .top-bar-tabs {
-        display: none;
+    .post-action-btn span {
+        display: inline;
     }
 
     .post-source {
@@ -2991,35 +3211,97 @@ body {
 
     .post-actions {
         padding: 12px 20px;
+        gap: 8px;
+        flex-wrap: nowrap;
     }
 
     .post-explain-row {
         padding: 12px 20px 16px;
+        flex-direction: row;
+        align-items: center;
     }
 
-    .story-reader-panel {
-        max-width: 100%;
+    .post-explain-btn {
+        width: auto;
     }
 
-    .story-reader-content {
-        padding: 24px 20px;
+    .top-bar-menu {
+        display: none;
     }
 
-    .story-reader-title {
-        font-size: 1.4rem;
+    .sidebar {
+        position: sticky;
+        top: var(--topbar-height);
+        height: calc(100vh - var(--topbar-height));
+        width: var(--sidebar-width);
+        max-width: none;
+        transform: none;
+        box-shadow: none;
+        padding: 24px 0;
+        background: transparent;
+        border-right: none;
     }
 
-    .search-overlay-panel {
-        margin: 0;
-        border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-        max-height: 90vh;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    .sidebar-close {
+        display: none;
     }
 
-    .chat-page {
-        height: calc(100vh - var(--topbar-height) - var(--bottom-nav-height));
+    .sidebar-overlay {
+        display: none;
+    }
+
+    .app-right-rail {
+        display: none;
+    }
+}
+
+/* ---- Desktop (1024–1199px) ---- */
+@media (min-width: 1024px) {
+    .app-body {
+        flex-direction: row;
+        gap: 24px;
+        padding: 0 24px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .app-right-rail {
+        display: block;
+    }
+}
+
+/* ---- Wide desktop (≥ 1200px) ---- */
+@media (min-width: 1200px) {
+    .app-body {
+        gap: 32px;
+    }
+}
+
+/* ---- Very small phones (≤ 380px) ---- */
+@media (max-width: 380px) {
+    .brand-name {
+        font-size: 0.95rem;
+    }
+
+    .top-bar-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .day-chip {
+        min-width: 56px;
+        padding: 8px 10px;
+    }
+
+    .day-chip-date {
+        font-size: 0.9rem;
+    }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+    .sidebar,
+    .sidebar-overlay {
+        transition: none;
     }
 }
