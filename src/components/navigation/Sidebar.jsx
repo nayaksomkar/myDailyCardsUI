@@ -1,8 +1,11 @@
 import React from 'react';
 import { getCategories } from '../../services/data';
+import useServiceHealth from '../../hooks/useServiceHealth';
 
 export default function Sidebar({ activePage, onNavigate, days, currentDayId, onSelectDay }) {
   const categories = getCategories();
+  const { services, onlineCount, total, loading } = useServiceHealth();
+  const overall = loading ? 'checking' : (onlineCount === total ? 'online' : (onlineCount === 0 ? 'offline' : 'slow'));
 
   return (
     <aside className="sidebar">
@@ -92,13 +95,16 @@ export default function Sidebar({ activePage, onNavigate, days, currentDayId, on
       <div className="sidebar-section sidebar-services">
         <h4 className="sidebar-section-title">Services</h4>
         <div className="service-status-mini">
-          <span className="service-dot online" />
-          <span>3/3 online</span>
+          <span className={`service-dot ${overall}`} />
+          <span>{loading ? 'Checking…' : `${onlineCount}/${total} online`}</span>
         </div>
         <div className="sidebar-service-list">
-          <span>Main Orchestrator</span>
-          <span>LLM Brain</span>
-          <span>WebHunter</span>
+          {services.map((s) => (
+            <div key={s.id} className="sidebar-service-row">
+              <span className={`service-dot ${s.status}`} />
+              <span>{s.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </aside>
