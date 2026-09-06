@@ -601,8 +601,8 @@ body {
 }
 
 .ai-summary-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.65;
     color: var(--text-secondary);
 }
 
@@ -3191,13 +3191,13 @@ body {
 }
 
 .ai-summary {
-    padding: 12px 14px;
+    padding: 14px 14px;
     border-radius: var(--radius-md);
 }
 
 .ai-summary-text {
-    font-size: 0.9rem;
-    line-height: 1.55;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .day-selector {
