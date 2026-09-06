@@ -1,0 +1,1863 @@
+{
+  "app": {
+    "name": "myDailyCards",
+    "version": "1.0.0",
+    "description": "A personalized seven-day AI news briefing with source-grounded summaries.",
+    "themes": {
+      "default": "dark",
+      "available": ["light", "dark"],
+      "accent": {
+        "palette": "caramel-coffee",
+        "primary": "#A66A3F",
+        "secondary": "#C89B6D",
+        "cream": "#F4EBDD",
+        "coffee": "#4A3328",
+        "brown": "#6B4A3A"
+      }
+    }
+  },
+
+  "categories": [
+    {
+      "id": "ai",
+      "name": "AI",
+      "description": "Artificial intelligence, models, agents and AI companies",
+      "keywords": ["AI", "artificial intelligence", "LLM", "agents", "models"]
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "description": "Technology, software, hardware and emerging technologies",
+      "keywords": ["technology", "software", "hardware", "cloud", "chips"]
+    },
+    {
+      "id": "startups",
+      "name": "Startups",
+      "description": "Startups, founders, funding and venture capital",
+      "keywords": ["startup", "founder", "funding", "VC", "venture capital"]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "description": "Companies, markets, strategy and business developments",
+      "keywords": ["business", "companies", "strategy", "markets"]
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "description": "Markets, investing, economics and financial developments",
+      "keywords": ["finance", "stocks", "markets", "economy", "investing"]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "description": "Scientific discoveries, research and space",
+      "keywords": ["science", "research", "space", "biology"]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "description": "Major sporting events and developments",
+      "keywords": ["sports", "cricket", "football", "tennis"]
+    },
+    {
+      "id": "world",
+      "name": "World",
+      "description": "Major international developments",
+      "keywords": ["world", "international", "politics", "geopolitics"]
+    }
+  ],
+
+  "keywords": [
+    "AI",
+    "startups",
+    "technology",
+    "business",
+    "finance",
+    "science",
+    "sports",
+    "world",
+    "LLM",
+    "agents",
+    "venture capital",
+    "chips",
+    "cloud",
+    "robotics",
+    "space"
+  ],
+
+  "days": [
+    {
+      "id": "day-1",
+      "date": "2026-09-06",
+      "label": "Today",
+      "displayDate": "September 6, 2026",
+      "storyCount": 6,
+      "featuredCategory": "ai",
+      "stories": [
+        {
+          "id": "story-001",
+          "type": "news_card",
+          "category": "ai",
+          "title": "AI agents move from chatbots toward autonomous workflows",
+          "subtitle": "Companies are increasingly experimenting with systems that can plan and execute multi-step tasks.",
+          "summary": "The latest wave of AI products is moving beyond simple question-and-answer interfaces toward agents capable of completing longer workflows. The shift is creating opportunities for businesses to automate research, customer support, operations and software development.",
+          "shortSummary": "AI is increasingly shifting from answering questions to completing multi-step tasks.",
+          "keywords": [
+            "AI",
+            "agents",
+            "automation",
+            "LLM"
+          ],
+          "sourceCount": 3,
+          "sources": [
+            {
+              "id": "source-001",
+              "name": "Tech Research Daily",
+              "domain": "example.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-06T08:30:00+05:30",
+              "url": "https://example.com/ai-agents",
+              "credibility": "high"
+            },
+            {
+              "id": "source-002",
+              "name": "AI Industry Review",
+              "domain": "example.ai",
+              "type": "industry-publication",
+              "publishedAt": "2026-09-06T07:45:00+05:30",
+              "url": "https://example.ai/agent-trends",
+              "credibility": "high"
+            },
+            {
+              "id": "source-003",
+              "name": "Startup Technology Journal",
+              "domain": "example.org",
+              "type": "business-publication",
+              "publishedAt": "2026-09-06T06:20:00+05:30",
+              "url": "https://example.org/ai-workflows",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.91,
+            "keyPoints": [
+              "AI products are increasingly designed around task completion.",
+              "Agent systems can combine multiple tools and models.",
+              "Businesses are testing agents for repetitive workflows.",
+              "Reliability remains a major challenge."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "The important shift is from AI as an interface to AI as a worker that can complete a sequence of tasks. This could change how software products are designed and create new opportunities for startups building specialized agents.",
+            "evidence": [
+              "Multiple sources describe increased interest in multi-step AI workflows.",
+              "The trend is appearing across software and business automation products."
+            ]
+          }
+        },
+
+        {
+          "id": "story-002",
+          "type": "news_card",
+          "category": "startups",
+          "title": "Investors continue to favor infrastructure-heavy AI startups",
+          "subtitle": "Funding is increasingly concentrating around companies building core AI infrastructure.",
+          "summary": "AI infrastructure companies remain an important focus for investors as demand for compute, model deployment and data infrastructure grows.",
+          "shortSummary": "AI infrastructure remains a major area of startup investment.",
+          "keywords": [
+            "startups",
+            "AI",
+            "venture capital",
+            "funding"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-004",
+              "name": "Startup Ledger",
+              "domain": "example.net",
+              "type": "startup-publication",
+              "publishedAt": "2026-09-06T05:40:00+05:30",
+              "url": "https://example.net/ai-funding",
+              "credibility": "high"
+            },
+            {
+              "id": "source-005",
+              "name": "Venture Weekly",
+              "domain": "example.co",
+              "type": "venture-publication",
+              "publishedAt": "2026-09-06T04:15:00+05:30",
+              "url": "https://example.co/venture-ai",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.86,
+            "keyPoints": [
+              "Infrastructure remains attractive to investors.",
+              "Compute demand continues to influence startup economics.",
+              "Developer tooling is another active area."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Infrastructure businesses can benefit from the growing amount of compute and software required by AI applications, although they can also face high capital requirements."
+          }
+        },
+
+        {
+          "id": "story-003",
+          "type": "news_card",
+          "category": "technology",
+          "title": "Chipmakers focus on efficiency as AI workloads expand",
+          "subtitle": "Energy efficiency is becoming a bigger consideration for AI infrastructure.",
+          "summary": "As AI workloads grow, hardware companies are increasingly emphasizing performance per watt alongside raw computational power.",
+          "shortSummary": "AI hardware is increasingly being judged by efficiency as well as performance.",
+          "keywords": [
+            "technology",
+            "chips",
+            "AI",
+            "hardware"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-006",
+              "name": "Hardware Monitor",
+              "domain": "examplehardware.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-06T03:50:00+05:30",
+              "url": "https://examplehardware.com/ai-chips",
+              "credibility": "high"
+            },
+            {
+              "id": "source-007",
+              "name": "Compute Journal",
+              "domain": "examplecompute.com",
+              "type": "industry-publication",
+              "publishedAt": "2026-09-06T02:30:00+05:30",
+              "url": "https://examplecompute.com/efficiency",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.89,
+            "keyPoints": [
+              "AI workloads require significant computational resources.",
+              "Power consumption is becoming a strategic concern.",
+              "Hardware efficiency can influence operating costs."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "For AI businesses, infrastructure efficiency directly affects operating costs. Improvements in performance per watt could make some AI workloads cheaper to run."
+          }
+        },
+
+        {
+          "id": "story-004",
+          "type": "news_card",
+          "category": "science",
+          "title": "Researchers explore new approaches to reusable space systems",
+          "subtitle": "Space companies and researchers continue looking for ways to reduce launch costs.",
+          "summary": "Research into reusable launch and spacecraft systems continues as the commercial space industry looks for ways to reduce the cost of accessing orbit.",
+          "shortSummary": "Reusable space technology remains focused on reducing launch costs.",
+          "keywords": [
+            "science",
+            "space",
+            "research"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-008",
+              "name": "Science Observer",
+              "domain": "examplescience.com",
+              "type": "science-publication",
+              "publishedAt": "2026-09-06T01:50:00+05:30",
+              "url": "https://examplescience.com/space",
+              "credibility": "high"
+            },
+            {
+              "id": "source-009",
+              "name": "Space Research Weekly",
+              "domain": "examplespace.com",
+              "type": "science-publication",
+              "publishedAt": "2026-09-06T01:20:00+05:30",
+              "url": "https://examplespace.com/reusable-systems",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.83,
+            "keyPoints": [
+              "Reusable systems can reduce launch costs.",
+              "Commercial space activity continues to grow.",
+              "Engineering reliability remains important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Lower launch costs can expand the number of commercial and scientific missions that are economically viable."
+          }
+        },
+
+        {
+          "id": "story-005",
+          "type": "news_card",
+          "category": "finance",
+          "title": "Markets watch technology spending and interest-rate expectations",
+          "subtitle": "Investors continue monitoring technology investment and broader economic signals.",
+          "summary": "Technology spending and expectations around monetary policy remain important themes for investors assessing growth-oriented companies.",
+          "shortSummary": "Technology spending and monetary policy remain key market themes.",
+          "keywords": [
+            "finance",
+            "markets",
+            "technology",
+            "economy"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-010",
+              "name": "Market Brief",
+              "domain": "examplemarkets.com",
+              "type": "financial-publication",
+              "publishedAt": "2026-09-06T00:40:00+05:30",
+              "url": "https://examplemarkets.com/technology",
+              "credibility": "high"
+            },
+            {
+              "id": "source-011",
+              "name": "Economic Monitor",
+              "domain": "exampleeconomics.com",
+              "type": "economic-publication",
+              "publishedAt": "2026-09-06T00:10:00+05:30",
+              "url": "https://exampleeconomics.com/markets",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.88,
+            "keyPoints": [
+              "Technology spending remains an important growth indicator.",
+              "Interest-rate expectations influence growth stocks.",
+              "Investors are watching corporate AI spending."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Changes in technology spending and financing conditions can influence how quickly startups and established companies invest in new products."
+          }
+        },
+
+        {
+          "id": "story-006",
+          "type": "news_card",
+          "category": "sports",
+          "title": "Major sporting events continue driving digital engagement",
+          "subtitle": "Sports platforms experiment with increasingly personalized digital experiences.",
+          "summary": "Sports organizations and digital platforms continue exploring personalized content, live statistics and fan-engagement experiences.",
+          "shortSummary": "Sports platforms are increasingly using personalized digital experiences to engage fans.",
+          "keywords": [
+            "sports",
+            "technology",
+            "digital"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-012",
+              "name": "Sports Digital",
+              "domain": "examplesports.com",
+              "type": "sports-publication",
+              "publishedAt": "2026-09-05T23:30:00+05:30",
+              "url": "https://examplesports.com/digital-fans",
+              "credibility": "medium"
+            },
+            {
+              "id": "source-013",
+              "name": "Fan Technology",
+              "domain": "examplefan.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-05T22:50:00+05:30",
+              "url": "https://examplefan.com/sports-tech",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.79,
+            "keyPoints": [
+              "Sports platforms are increasing personalization.",
+              "Live data is becoming a core engagement feature.",
+              "Digital fan experiences are expanding."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Sports provide a useful example of how personalization and real-time information can make digital products more engaging."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "day-2",
+      "date": "2026-09-05",
+      "label": "Yesterday",
+      "displayDate": "September 5, 2026",
+      "storyCount": 5,
+      "featuredCategory": "business",
+      "stories": [
+        {
+          "id": "story-007",
+          "type": "news_card",
+          "category": "business",
+          "title": "Consumer brands compete through stronger personalization",
+          "subtitle": "Brands are using customer data to create more targeted product experiences.",
+          "summary": "Consumer companies are increasingly experimenting with personalization across product recommendations, marketing and customer experiences.",
+          "shortSummary": "Personalization is becoming a stronger competitive tool for consumer brands.",
+          "keywords": [
+            "business",
+            "consumer",
+            "personalization"
+          ],
+          "sourceCount": 3,
+          "sources": [
+            {
+              "id": "source-014",
+              "name": "Consumer Business Review",
+              "domain": "exampleconsumer.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-05T18:00:00+05:30",
+              "url": "https://exampleconsumer.com/personalization",
+              "credibility": "high"
+            },
+            {
+              "id": "source-015",
+              "name": "Brand Strategy Daily",
+              "domain": "examplebrand.com",
+              "type": "marketing-publication",
+              "publishedAt": "2026-09-05T16:00:00+05:30",
+              "url": "https://examplebrand.com/strategy",
+              "credibility": "medium"
+            },
+            {
+              "id": "source-016",
+              "name": "Retail Intelligence",
+              "domain": "exampleretail.com",
+              "type": "industry-publication",
+              "publishedAt": "2026-09-05T13:00:00+05:30",
+              "url": "https://exampleretail.com/personalization",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.87,
+            "keyPoints": [
+              "Personalization can improve product discovery.",
+              "Brands are integrating customer data across channels.",
+              "Privacy and data quality remain important challenges."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Personalization can become a competitive advantage when it improves the customer's experience without adding unnecessary complexity."
+          }
+        },
+        {
+          "id": "story-008",
+          "type": "news_card",
+          "category": "ai",
+          "title": "Smaller AI models gain attention for specialized workloads",
+          "subtitle": "Developers are evaluating smaller models for cost-sensitive applications.",
+          "summary": "Smaller models can offer lower inference costs and faster responses for specific tasks, making them attractive for specialized applications.",
+          "shortSummary": "Smaller AI models can make specialized AI applications cheaper to operate.",
+          "keywords": [
+            "AI",
+            "LLM",
+            "models"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-017",
+              "name": "Model Research",
+              "domain": "examplemodel.com",
+              "type": "AI-publication",
+              "publishedAt": "2026-09-05T14:20:00+05:30",
+              "url": "https://examplemodel.com/smaller-models",
+              "credibility": "high"
+            },
+            {
+              "id": "source-018",
+              "name": "Developer AI",
+              "domain": "exampledev.ai",
+              "type": "developer-publication",
+              "publishedAt": "2026-09-05T12:40:00+05:30",
+              "url": "https://exampledev.ai/model-cost",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.9,
+            "keyPoints": [
+              "Smaller models can reduce inference costs.",
+              "Specialized models can perform well on narrow tasks.",
+              "Latency can also improve."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Not every AI product needs the largest available model. Smaller specialized models can improve margins and responsiveness."
+          }
+        },
+        {
+          "id": "story-009",
+          "type": "news_card",
+          "category": "world",
+          "title": "Global supply chains continue adapting to changing trade conditions",
+          "subtitle": "Manufacturers continue diversifying sourcing and production.",
+          "summary": "Companies are continuing to reassess supply chains as trade policies, transportation costs and geopolitical conditions evolve.",
+          "shortSummary": "Companies are diversifying supply chains to manage uncertainty.",
+          "keywords": [
+            "world",
+            "business",
+            "trade"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-019",
+              "name": "Global Trade Review",
+              "domain": "exampletrade.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-05T11:00:00+05:30",
+              "url": "https://exampletrade.com/supply-chains",
+              "credibility": "high"
+            },
+            {
+              "id": "source-020",
+              "name": "Global Business Journal",
+              "domain": "exampleglobal.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-05T09:30:00+05:30",
+              "url": "https://exampleglobal.com/trade",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.84,
+            "keyPoints": [
+              "Companies are diversifying suppliers.",
+              "Trade uncertainty can increase operational risk.",
+              "Supply-chain resilience is becoming more important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Supply-chain diversification can reduce dependence on a single supplier or geography, although it may increase short-term costs."
+          }
+        },
+        {
+          "id": "story-010",
+          "type": "news_card",
+          "category": "finance",
+          "title": "Investors examine earnings expectations across growth sectors",
+          "subtitle": "Forward earnings expectations remain a key market indicator.",
+          "summary": "Investors continue comparing company growth expectations with valuations across technology and other growth-oriented sectors.",
+          "shortSummary": "Investors are balancing growth expectations against valuations.",
+          "keywords": [
+            "finance",
+            "investing",
+            "markets"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-021",
+              "name": "Market Outlook",
+              "domain": "exampleoutlook.com",
+              "type": "financial-publication",
+              "publishedAt": "2026-09-05T08:20:00+05:30",
+              "url": "https://exampleoutlook.com/earnings",
+              "credibility": "high"
+            },
+            {
+              "id": "source-022",
+              "name": "Investor Journal",
+              "domain": "exampleinvestor.com",
+              "type": "financial-publication",
+              "publishedAt": "2026-09-05T07:30:00+05:30",
+              "url": "https://exampleinvestor.com/growth",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.82,
+            "keyPoints": [
+              "Growth expectations influence valuations.",
+              "Investors are watching future earnings.",
+              "Technology remains a closely monitored sector."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "A company's expected growth is important because investors often evaluate its valuation relative to future earnings."
+          }
+        },
+        {
+          "id": "story-011",
+          "type": "news_card",
+          "category": "technology",
+          "title": "Developers increasingly combine multiple AI tools in applications",
+          "subtitle": "Modern applications are becoming more modular and tool-oriented.",
+          "summary": "Developers are combining models, search, databases and external tools into coordinated AI applications.",
+          "shortSummary": "AI applications are increasingly built from multiple coordinated tools.",
+          "keywords": [
+            "technology",
+            "AI",
+            "agents",
+            "software"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-023",
+              "name": "Developer Stack",
+              "domain": "examplestack.dev",
+              "type": "developer-publication",
+              "publishedAt": "2026-09-05T06:20:00+05:30",
+              "url": "https://examplestack.dev/ai-tools",
+              "credibility": "high"
+            },
+            {
+              "id": "source-024",
+              "name": "Software Engineering Review",
+              "domain": "examplesoftware.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-05T05:30:00+05:30",
+              "url": "https://examplesoftware.com/ai-apps",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.88,
+            "keyPoints": [
+              "AI applications increasingly use multiple services.",
+              "Tool orchestration is becoming important.",
+              "Modular systems can make applications easier to extend."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Building AI applications from specialized components can make systems more flexible than relying on one model for every task."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "day-3",
+      "date": "2026-09-04",
+      "label": "2 days ago",
+      "displayDate": "September 4, 2026",
+      "storyCount": 4,
+      "featuredCategory": "startups",
+      "stories": [
+        {
+          "id": "story-012",
+          "type": "news_card",
+          "category": "startups",
+          "title": "Founders increasingly build vertical AI products",
+          "subtitle": "Industry-specific AI applications are becoming a popular startup direction.",
+          "summary": "Rather than competing directly on general-purpose AI, startups are increasingly building products around specific industries and workflows.",
+          "shortSummary": "Vertical AI is becoming an attractive startup strategy.",
+          "keywords": [
+            "startups",
+            "AI",
+            "vertical AI"
+          ],
+          "sourceCount": 3,
+          "sources": [
+            {
+            "id": "source-025",
+            "name": "Founder Journal",
+            "domain": "examplefounders.com",
+            "type": "startup-publication",
+            "publishedAt": "2026-09-04T18:00:00+05:30",
+            "url": "https://examplefounders.com/vertical-ai",
+            "credibility": "high"
+            },
+            {
+              "id": "source-026",
+              "name": "Venture Insights",
+              "domain": "exampleventure.com",
+              "type": "venture-publication",
+              "publishedAt": "2026-09-04T15:00:00+05:30",
+              "url": "https://exampleventure.com/vertical-ai",
+              "credibility": "high"
+            },
+            {
+              "id": "source-027",
+              "name": "AI Business Review",
+              "domain": "examplebusiness.ai",
+              "type": "AI-publication",
+              "publishedAt": "2026-09-04T11:00:00+05:30",
+              "url": "https://examplebusiness.ai/vertical-products",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.92,
+            "keyPoints": [
+              "Vertical AI products focus on specific workflows.",
+              "Industry knowledge can become a product advantage.",
+              "Specialization can reduce direct competition with general AI tools."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Specialization allows a startup to solve a narrower problem deeply and potentially build proprietary workflow knowledge."
+          }
+        },
+        {
+          "id": "story-013",
+          "type": "news_card",
+          "category": "business",
+          "title": "Subscription businesses experiment with hybrid pricing",
+          "subtitle": "Companies are combining subscriptions with usage-based models.",
+          "summary": "Some software companies are experimenting with combinations of subscriptions, usage-based pricing and premium tiers.",
+          "shortSummary": "Hybrid pricing models are gaining attention among software companies.",
+          "keywords": [
+            "business",
+            "pricing",
+            "SaaS"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-028",
+              "name": "SaaS Economics",
+              "domain": "examplesaas.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-04T10:00:00+05:30",
+              "url": "https://examplesaas.com/hybrid-pricing",
+              "credibility": "high"
+            },
+            {
+              "id": "source-029",
+              "name": "Product Strategy Weekly",
+              "domain": "exampleproduct.com",
+              "type": "product-publication",
+              "publishedAt": "2026-09-04T08:30:00+05:30",
+              "url": "https://exampleproduct.com/pricing",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.84,
+            "keyPoints": [
+              "Hybrid pricing can combine predictable revenue with usage expansion.",
+              "Customers may prefer simpler plans.",
+              "Pricing complexity can create friction."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Pricing structure affects both customer acquisition and recurring revenue, so businesses need to balance simplicity with monetization."
+          }
+        },
+        {
+          "id": "story-014",
+          "type": "news_card",
+          "category": "science",
+          "title": "New research highlights progress in sustainable materials",
+          "subtitle": "Researchers continue exploring alternatives to resource-intensive materials.",
+          "summary": "Research groups are investigating new materials designed to reduce environmental impact while maintaining useful performance characteristics.",
+          "shortSummary": "Researchers are exploring more sustainable alternatives to conventional materials.",
+          "keywords": [
+            "science",
+            "materials",
+            "sustainability"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-030",
+              "name": "Materials Science Today",
+              "domain": "examplematerials.org",
+              "type": "science-publication",
+              "publishedAt": "2026-09-04T07:00:00+05:30",
+              "url": "https://examplematerials.org/research",
+              "credibility": "high"
+            },
+            {
+              "id": "source-031",
+              "name": "Research Digest",
+              "domain": "exampleresearch.com",
+              "type": "science-publication",
+              "publishedAt": "2026-09-04T06:30:00+05:30",
+              "url": "https://exampleresearch.com/materials",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.81,
+            "keyPoints": [
+              "Researchers are testing alternative materials.",
+              "Performance and cost remain major adoption factors.",
+              "Sustainability is influencing material research."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Sustainable materials can become commercially relevant when they achieve comparable performance at a competitive cost."
+          }
+        },
+        {
+          "id": "story-015",
+          "type": "news_card",
+          "category": "sports",
+          "title": "Teams use analytics to improve player performance",
+          "subtitle": "Data continues to play a larger role in sports decision-making.",
+          "summary": "Teams are increasingly using analytics to evaluate performance, workload and strategy.",
+          "shortSummary": "Sports teams are using more data to guide performance decisions.",
+          "keywords": [
+            "sports",
+            "analytics",
+            "data"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-032",
+              "name": "Sports Analytics",
+              "domain": "examplesportsanalytics.com",
+              "type": "sports-publication",
+              "publishedAt": "2026-09-04T05:00:00+05:30",
+              "url": "https://examplesportsanalytics.com/performance",
+              "credibility": "medium"
+            },
+            {
+              "id": "source-033",
+              "name": "Performance Lab",
+              "domain": "exampleperformance.com",
+              "type": "sports-publication",
+              "publishedAt": "2026-09-04T04:20:00+05:30",
+              "url": "https://exampleperformance.com/data",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.78,
+            "keyPoints": [
+              "Analytics can help teams evaluate player workload.",
+              "Data can complement traditional coaching.",
+              "Interpretation remains important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Sports analytics illustrates how large amounts of data can support human decision-making without completely replacing expert judgment."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "day-4",
+      "date": "2026-09-03",
+      "label": "3 days ago",
+      "displayDate": "September 3, 2026",
+      "storyCount": 4,
+      "featuredCategory": "technology",
+      "stories": [
+        {
+          "id": "story-016",
+          "type": "news_card",
+          "category": "technology",
+          "title": "Cloud providers expand tools for AI application developers",
+          "subtitle": "Developer platforms are adding more managed AI infrastructure.",
+          "summary": "Cloud platforms continue expanding services designed to simplify model deployment, data processing and AI application development.",
+          "shortSummary": "Cloud platforms are making AI infrastructure easier for developers to use.",
+          "keywords": [
+            "technology",
+            "cloud",
+            "AI",
+            "developers"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-034",
+              "name": "Cloud Engineering Weekly",
+              "domain": "examplecloud.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-03T15:00:00+05:30",
+              "url": "https://examplecloud.com/ai-platforms",
+              "credibility": "high"
+            },
+            {
+              "id": "source-035",
+              "name": "Developer Infrastructure",
+              "domain": "exampleinfra.dev",
+              "type": "developer-publication",
+              "publishedAt": "2026-09-03T13:00:00+05:30",
+              "url": "https://exampleinfra.dev/cloud-ai",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.88,
+            "keyPoints": [
+              "Cloud providers are adding managed AI services.",
+              "Deployment complexity is becoming easier to abstract.",
+              "Developer tooling is increasingly important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Better infrastructure abstractions can allow smaller teams to build sophisticated AI applications without managing every layer themselves."
+          }
+        },
+        {
+          "id": "story-017",
+          "type": "news_card",
+          "category": "startups",
+          "title": "Early-stage founders prioritize distribution alongside product",
+          "subtitle": "Startup discussions increasingly emphasize customer acquisition from the beginning.",
+          "summary": "Founders are placing greater emphasis on distribution strategies rather than treating acquisition as something that happens after product development.",
+          "shortSummary": "Startups are thinking about distribution earlier in the product lifecycle.",
+          "keywords": [
+            "startups",
+            "distribution",
+            "growth"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-036",
+              "name": "Founder Playbook",
+              "domain": "examplefounder.com",
+              "type": "startup-publication",
+              "publishedAt": "2026-09-03T11:00:00+05:30",
+              "url": "https://examplefounder.com/distribution",
+              "credibility": "medium"
+            },
+            {
+              "id": "source-037",
+              "name": "Startup Growth",
+              "domain": "examplestartupgrowth.com",
+              "type": "startup-publication",
+              "publishedAt": "2026-09-03T09:00:00+05:30",
+              "url": "https://examplestartupgrowth.com/distribution",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.83,
+            "keyPoints": [
+              "Distribution can influence product strategy.",
+              "Early customer feedback can shape development.",
+              "Acquisition costs should be considered early."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "A strong product still needs a repeatable way to reach customers. Considering distribution early can prevent building products without a viable acquisition path."
+          }
+        },
+        {
+          "id": "story-018",
+          "type": "news_card",
+          "category": "world",
+          "title": "Governments continue developing AI policy frameworks",
+          "subtitle": "Regulators are working through questions around safety, transparency and accountability.",
+          "summary": "Governments and regulators continue developing frameworks for AI deployment, focusing on safety, transparency and accountability.",
+          "shortSummary": "AI regulation continues evolving across major markets.",
+          "keywords": [
+            "world",
+            "AI",
+            "regulation"
+          ],
+          "sourceCount": 3,
+          "sources": [
+            {
+              "id": "source-038",
+              "name": "Policy Monitor",
+              "domain": "examplepolicy.org",
+              "type": "policy-publication",
+              "publishedAt": "2026-09-03T08:00:00+05:30",
+              "url": "https://examplepolicy.org/ai",
+              "credibility": "high"
+            },
+            {
+              "id": "source-039",
+              "name": "Technology Policy Review",
+              "domain": "exampletechpolicy.com",
+              "type": "policy-publication",
+              "publishedAt": "2026-09-03T07:30:00+05:30",
+              "url": "https://exampletechpolicy.com/regulation",
+              "credibility": "high"
+            },
+            {
+              "id": "source-040",
+              "name": "Global Technology Policy",
+              "domain": "exampleglobalpolicy.com",
+              "type": "policy-publication",
+              "publishedAt": "2026-09-03T06:00:00+05:30",
+              "url": "https://exampleglobalpolicy.com/ai-policy",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.9,
+            "keyPoints": [
+              "AI regulation remains an evolving area.",
+              "Transparency is a recurring policy concern.",
+              "Companies may need stronger compliance processes."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Regulation can affect how companies collect data, train models, deploy AI systems and communicate with customers."
+          }
+        },
+        {
+          "id": "story-019",
+          "type": "news_card",
+          "category": "business",
+          "title": "Retailers test smaller-format stores and digital-first experiences",
+          "subtitle": "Retailers are experimenting with different combinations of physical and digital shopping.",
+          "summary": "Retailers continue experimenting with store formats, digital ordering and integrated shopping experiences.",
+          "shortSummary": "Retailers are combining physical stores with digital shopping experiences.",
+          "keywords": [
+            "business",
+            "retail",
+            "ecommerce"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-041",
+              "name": "Retail Business",
+              "domain": "exampleretailbusiness.com",
+              "type": "retail-publication",
+              "publishedAt": "2026-09-03T05:30:00+05:30",
+              "url": "https://exampleretailbusiness.com/store-formats",
+              "credibility": "high"
+            },
+            {
+              "id": "source-042",
+              "name": "Commerce Review",
+              "domain": "examplecommerce.com",
+              "type": "commerce-publication",
+              "publishedAt": "2026-09-03T04:00:00+05:30",
+              "url": "https://examplecommerce.com/retail",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.8,
+            "keyPoints": [
+              "Retail formats are becoming more flexible.",
+              "Digital ordering can complement physical stores.",
+              "Customer convenience remains important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "The combination of online and offline experiences gives retailers more ways to reach customers and test new formats."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "day-5",
+      "date": "2026-09-02",
+      "label": "4 days ago",
+      "displayDate": "September 2, 2026",
+      "storyCount": 4,
+      "featuredCategory": "finance",
+      "stories": [
+        {
+          "id": "story-020",
+          "type": "news_card",
+          "category": "finance",
+          "title": "Investors reassess growth opportunities in emerging technology",
+          "subtitle": "New technology categories continue attracting market attention.",
+          "summary": "Investors continue evaluating emerging technology companies based on growth potential, profitability and competitive positioning.",
+          "shortSummary": "Investors are balancing technology growth potential with profitability.",
+          "keywords": [
+            "finance",
+            "technology",
+            "investing"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-043",
+              "name": "Capital Markets Daily",
+              "domain": "examplecapital.com",
+              "type": "financial-publication",
+              "publishedAt": "2026-09-02T16:00:00+05:30",
+              "url": "https://examplecapital.com/technology",
+              "credibility": "high"
+            },
+            {
+              "id": "source-044",
+              "name": "Growth Investor",
+              "domain": "examplegrowth.com",
+              "type": "financial-publication",
+              "publishedAt": "2026-09-02T14:30:00+05:30",
+              "url": "https://examplegrowth.com/emerging-tech",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.82,
+            "keyPoints": [
+              "Growth remains important to technology valuations.",
+              "Profitability is receiving increased attention.",
+              "Competitive advantages matter more as markets mature."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Technology companies can attract significant investment, but investors ultimately need evidence that growth can translate into sustainable economics."
+          }
+        },
+        {
+          "id": "story-021",
+          "type": "news_card",
+          "category": "ai",
+          "title": "AI companies focus on reliability for enterprise deployments",
+          "subtitle": "Businesses want AI systems that behave consistently across workflows.",
+          "summary": "Enterprise adoption increasingly depends on reliability, monitoring and predictable AI behavior rather than model capability alone.",
+          "shortSummary": "Enterprise AI adoption increasingly depends on reliability and control.",
+          "keywords": [
+            "AI",
+            "enterprise",
+            "reliability"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-045",
+              "name": "Enterprise AI Review",
+              "domain": "exampleenterprise.ai",
+              "type": "AI-publication",
+              "publishedAt": "2026-09-02T12:00:00+05:30",
+              "url": "https://exampleenterprise.ai/reliability",
+              "credibility": "high"
+            },
+            {
+              "id": "source-046",
+              "name": "Business AI Journal",
+              "domain": "examplebusinessai.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-02T10:30:00+05:30",
+              "url": "https://examplebusinessai.com/enterprise",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.91,
+            "keyPoints": [
+              "Enterprise customers prioritize reliability.",
+              "Monitoring and evaluation are becoming important.",
+              "Model capability alone does not guarantee adoption."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Enterprise customers often care as much about predictable behavior, security and monitoring as they do about raw model intelligence."
+          }
+        },
+        {
+          "id": "story-022",
+          "type": "news_card",
+          "category": "science",
+          "title": "Researchers explore new methods for personalized medicine",
+          "subtitle": "Data-driven approaches continue influencing biomedical research.",
+          "summary": "Researchers are investigating ways to use patient-specific information to improve treatment decisions and research outcomes.",
+          "shortSummary": "Personalized medicine research continues to combine biology with data science.",
+          "keywords": [
+            "science",
+            "medicine",
+            "data"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-047",
+              "name": "Biomedical Research",
+              "domain": "examplebio.org",
+              "type": "science-publication",
+              "publishedAt": "2026-09-02T09:00:00+05:30",
+              "url": "https://examplebio.org/personalized-medicine",
+              "credibility": "high"
+            },
+            {
+              "id": "source-048",
+              "name": "Medical Research Digest",
+              "domain": "examplemedical.org",
+              "type": "science-publication",
+              "publishedAt": "2026-09-02T08:30:00+05:30",
+              "url": "https://examplemedical.org/research",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.85,
+            "keyPoints": [
+              "Patient-specific information can support research.",
+              "Data quality remains critical.",
+              "Clinical validation is required before adoption."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Personalized medicine could make treatments more targeted, but translating research into clinical practice requires extensive validation."
+          }
+        },
+        {
+          "id": "story-023",
+          "type": "news_card",
+          "category": "technology",
+          "title": "Developer tools increasingly include AI-assisted workflows",
+          "subtitle": "AI coding tools are becoming integrated into broader development environments.",
+          "summary": "AI assistance is increasingly appearing throughout software development workflows, from coding to testing and documentation.",
+          "shortSummary": "AI is becoming integrated across more parts of software development.",
+          "keywords": [
+            "technology",
+            "AI",
+            "developers",
+            "software"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-049",
+              "name": "Developer Tools Weekly",
+              "domain": "exampledevtools.com",
+              "type": "developer-publication",
+              "publishedAt": "2026-09-02T07:30:00+05:30",
+              "url": "https://exampledevtools.com/ai-coding",
+              "credibility": "high"
+            },
+            {
+              "id": "source-050",
+              "name": "Software Builder",
+              "domain": "examplesoftwarebuilder.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-02T06:40:00+05:30",
+              "url": "https://examplesoftwarebuilder.com/ai",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.87,
+            "keyPoints": [
+              "AI is moving beyond code completion.",
+              "Testing and documentation are becoming AI-assisted.",
+              "Developers remain responsible for validation."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "The broader opportunity is not just generating code but reducing friction across the entire software development lifecycle."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "day-6",
+      "date": "2026-09-01",
+      "label": "5 days ago",
+      "displayDate": "September 1, 2026",
+      "storyCount": 4,
+      "featuredCategory": "business",
+      "stories": [
+        {
+          "id": "story-024",
+          "type": "news_card",
+          "category": "business",
+          "title": "Consumer companies experiment with direct-to-consumer launches",
+          "subtitle": "Brands continue testing direct customer relationships alongside traditional retail.",
+          "summary": "Consumer companies are using direct-to-consumer channels to test products, collect feedback and build customer relationships.",
+          "shortSummary": "D2C remains useful for testing products and building direct customer relationships.",
+          "keywords": [
+            "business",
+            "D2C",
+            "consumer"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-051",
+              "name": "Consumer Strategy",
+              "domain": "exampleconsumerstrategy.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-01T17:00:00+05:30",
+              "url": "https://exampleconsumerstrategy.com/d2c",
+              "credibility": "high"
+            },
+            {
+              "id": "source-052",
+              "name": "Retail Growth",
+              "domain": "exampleretailgrowth.com",
+              "type": "retail-publication",
+              "publishedAt": "2026-09-01T15:00:00+05:30",
+              "url": "https://exampleretailgrowth.com/d2c",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.84,
+            "keyPoints": [
+              "D2C allows faster product experimentation.",
+              "Customer feedback can be collected directly.",
+              "Customer acquisition costs remain important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Direct customer relationships can help young brands understand demand before committing to larger retail distribution."
+          }
+        },
+        {
+          "id": "story-025",
+          "type": "news_card",
+          "category": "startups",
+          "title": "Bootstrapped startups continue focusing on early revenue",
+          "subtitle": "Some founders prioritize sustainable revenue before raising large rounds.",
+          "summary": "Bootstrapped startups are emphasizing early customer revenue and disciplined spending as alternatives to rapid venture-funded expansion.",
+          "shortSummary": "Some startups are prioritizing revenue and efficiency over rapid fundraising.",
+          "keywords": [
+            "startups",
+            "bootstrapping",
+            "revenue"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-053",
+              "name": "Bootstrap Journal",
+              "domain": "examplebootstrap.com",
+              "type": "startup-publication",
+              "publishedAt": "2026-09-01T13:00:00+05:30",
+              "url": "https://examplebootstrap.com/revenue",
+              "credibility": "medium"
+            },
+            {
+              "id": "source-054",
+              "name": "Founder Economics",
+              "domain": "examplefoundereconomics.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-01T11:30:00+05:30",
+              "url": "https://examplefoundereconomics.com/bootstrapping",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.81,
+            "keyPoints": [
+              "Early revenue can reduce dependence on outside funding.",
+              "Bootstrapping can encourage spending discipline.",
+              "Growth may be slower without large capital injections."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "A revenue-first approach can provide founders with more control, although it may limit how quickly the company can expand."
+          }
+        },
+        {
+          "id": "story-026",
+          "type": "news_card",
+          "category": "technology",
+          "title": "Open-source software remains important for AI developers",
+          "subtitle": "Developers continue relying on open ecosystems for experimentation.",
+          "summary": "Open-source libraries and models continue to play an important role in experimentation and application development.",
+          "shortSummary": "Open-source ecosystems remain central to AI experimentation.",
+          "keywords": [
+            "technology",
+            "AI",
+            "open source"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-055",
+              "name": "Open Technology",
+              "domain": "exampleopensource.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-09-01T09:00:00+05:30",
+              "url": "https://exampleopensource.com/ai",
+              "credibility": "high"
+            },
+            {
+              "id": "source-056",
+              "name": "Developer Ecosystem",
+              "domain": "exampleecosystem.dev",
+              "type": "developer-publication",
+              "publishedAt": "2026-09-01T08:00:00+05:30",
+              "url": "https://exampleecosystem.dev/open-source",
+              "credibility": "high"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.9,
+            "keyPoints": [
+              "Open-source tools reduce barriers to experimentation.",
+              "Developers can customize open systems.",
+              "Commercial products continue building on open ecosystems."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Open ecosystems allow developers to experiment quickly and build specialized products without starting every component from scratch."
+          }
+        },
+        {
+          "id": "story-027",
+          "type": "news_card",
+          "category": "world",
+          "title": "Businesses reassess international expansion strategies",
+          "subtitle": "Companies balance new opportunities against geopolitical and operational risks.",
+          "summary": "International expansion decisions increasingly consider regulation, supply chains, customer demand and geopolitical conditions together.",
+          "shortSummary": "International expansion now requires balancing opportunity with operational risk.",
+          "keywords": [
+            "world",
+            "business",
+            "expansion"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-057",
+              "name": "Global Business Review",
+              "domain": "exampleglobalbusiness.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-01T07:00:00+05:30",
+              "url": "https://exampleglobalbusiness.com/expansion",
+              "credibility": "high"
+            },
+            {
+              "id": "source-058",
+              "name": "Market Entry Journal",
+              "domain": "examplemarketentry.com",
+              "type": "business-publication",
+              "publishedAt": "2026-09-01T06:30:00+05:30",
+              "url": "https://examplemarketentry.com/global",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.8,
+            "keyPoints": [
+              "International expansion requires local market understanding.",
+              "Regulatory differences can increase complexity.",
+              "Supply-chain resilience can affect market-entry decisions."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "Expanding internationally is not simply about finding customers; companies must also understand regulations, operations, logistics and local competition."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "day-7",
+      "date": "2026-08-31",
+      "label": "6 days ago",
+      "displayDate": "August 31, 2026",
+      "storyCount": 4,
+      "featuredCategory": "ai",
+      "stories": [
+        {
+          "id": "story-028",
+          "type": "news_card",
+          "category": "ai",
+          "title": "AI search experiences become more conversational",
+          "subtitle": "Search products continue experimenting with direct answers and synthesized information.",
+          "summary": "Search experiences are increasingly combining traditional links with conversational answers and summarized information.",
+          "shortSummary": "Search is increasingly blending links with AI-generated answers.",
+          "keywords": [
+            "AI",
+            "search",
+            "technology"
+          ],
+          "sourceCount": 3,
+          "sources": [
+            {
+              "id": "source-059",
+              "name": "Search Technology Review",
+              "domain": "examplesearch.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-08-31T18:00:00+05:30",
+              "url": "https://examplesearch.com/ai-search",
+              "credibility": "high"
+            },
+            {
+              "id": "source-060",
+              "name": "Web Technology Daily",
+              "domain": "examplewebtech.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-08-31T15:00:00+05:30",
+              "url": "https://examplewebtech.com/search",
+              "credibility": "high"
+            },
+            {
+              "id": "source-061",
+              "name": "Digital Products",
+              "domain": "exampledigital.com",
+              "type": "product-publication",
+              "publishedAt": "2026-08-31T12:00:00+05:30",
+              "url": "https://exampledigital.com/ai-search",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.92,
+            "keyPoints": [
+              "Search products are adding conversational interfaces.",
+              "AI summaries can reduce the need to open multiple pages.",
+              "Source transparency remains important."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "As search becomes more conversational, the ability to provide accurate answers while maintaining source transparency becomes increasingly important."
+          }
+        },
+        {
+          "id": "story-029",
+          "type": "news_card",
+          "category": "startups",
+          "title": "Founders look for underserved niches instead of crowded markets",
+          "subtitle": "Niche markets can offer focused customer problems and clearer positioning.",
+          "summary": "Startup founders continue exploring smaller underserved markets where they can build differentiated products before expanding.",
+          "shortSummary": "Underserved niches can provide startups with clearer differentiation.",
+          "keywords": [
+            "startups",
+            "market",
+            "strategy"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-062",
+              "name": "Startup Strategy",
+              "domain": "examplestartupstrategy.com",
+              "type": "startup-publication",
+              "publishedAt": "2026-08-31T10:00:00+05:30",
+              "url": "https://examplestartupstrategy.com/niches",
+              "credibility": "medium"
+            },
+            {
+              "id": "source-063",
+              "name": "Founder Insights",
+              "domain": "examplefounderinsights.com",
+              "type": "startup-publication",
+              "publishedAt": "2026-08-31T08:30:00+05:30",
+              "url": "https://examplefounderinsights.com/niche",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.82,
+            "keyPoints": [
+              "Niche markets can reduce direct competition.",
+              "Focused products can solve specific customer problems.",
+              "Successful niches can later support expansion."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "A smaller market can be easier to understand and serve deeply, giving an early-stage company a clearer path to differentiation."
+          }
+        },
+        {
+          "id": "story-030",
+          "type": "news_card",
+          "category": "finance",
+          "title": "Private markets continue evaluating startup profitability",
+          "subtitle": "Investors increasingly examine efficiency alongside growth.",
+          "summary": "Startup investors continue balancing revenue growth with capital efficiency and the path toward sustainable profitability.",
+          "shortSummary": "Startup investors are paying attention to both growth and efficiency.",
+          "keywords": [
+            "finance",
+            "startups",
+            "profitability"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-064",
+              "name": "Private Markets Weekly",
+              "domain": "exampleprivatemarkets.com",
+              "type": "financial-publication",
+              "publishedAt": "2026-08-31T07:00:00+05:30",
+              "url": "https://exampleprivatemarkets.com/startups",
+              "credibility": "high"
+            },
+            {
+              "id": "source-065",
+              "name": "Venture Economics",
+              "domain": "exampleventureeconomics.com",
+              "type": "venture-publication",
+              "publishedAt": "2026-08-31T06:30:00+05:30",
+              "url": "https://exampleventureeconomics.com/profitability",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.85,
+            "keyPoints": [
+              "Growth remains important for startups.",
+              "Capital efficiency can extend runway.",
+              "Investors increasingly examine sustainable economics."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "A startup that grows efficiently can have more flexibility when raising capital or navigating changes in market conditions."
+          }
+        },
+        {
+          "id": "story-031",
+          "type": "news_card",
+          "category": "technology",
+          "title": "Robotics companies explore more adaptable machines",
+          "subtitle": "AI-powered robotics continues expanding into new environments.",
+          "summary": "Robotics researchers and companies are exploring systems that can adapt to changing environments and perform more general tasks.",
+          "shortSummary": "AI is helping robotics systems become more adaptable.",
+          "keywords": [
+            "technology",
+            "robotics",
+            "AI"
+          ],
+          "sourceCount": 2,
+          "sources": [
+            {
+              "id": "source-066",
+              "name": "Robotics Review",
+              "domain": "examplerobotics.com",
+              "type": "technology-publication",
+              "publishedAt": "2026-08-31T05:30:00+05:30",
+              "url": "https://examplerobotics.com/adaptive-machines",
+              "credibility": "high"
+            },
+            {
+              "id": "source-067",
+              "name": "Automation Journal",
+              "domain": "exampleautomation.com",
+              "type": "industry-publication",
+              "publishedAt": "2026-08-31T04:30:00+05:30",
+              "url": "https://exampleautomation.com/robotics",
+              "credibility": "medium"
+            }
+          ],
+          "aiSummary": {
+            "generated": true,
+            "sourceGrounded": true,
+            "confidence": 0.86,
+            "keyPoints": [
+              "AI can improve robot adaptability.",
+              "General-purpose robotics remains challenging.",
+              "Automation could expand into more flexible environments."
+            ]
+          },
+          "explain": {
+            "title": "Why this matters",
+            "answer": "More adaptable robots could expand automation beyond highly controlled industrial environments into more variable real-world settings."
+          }
+        }
+      ]
+    }
+  ],
+
+  "storyClusters": [
+    {
+      "id": "cluster-001",
+      "title": "The shift toward AI agents",
+      "category": "ai",
+      "storyIds": [
+        "story-001",
+        "story-008",
+        "story-012"
+      ],
+      "sourceCount": 7,
+      "aiSummary": "Across several days, multiple sources point toward a broader movement from general AI chat interfaces toward specialized and autonomous AI workflows.",
+      "keyTakeaway": "The opportunity is moving from simply using AI models toward building useful workflows around them.",
+      "explain": {
+        "title": "Explain this trend",
+        "answer": "The stories are connected because they describe different parts of the same shift: smaller models, specialized products and autonomous agents are making AI applications more focused and useful."
+      }
+    },
+    {
+      "id": "cluster-002",
+      "title": "Startups are becoming more efficiency-focused",
+      "category": "startups",
+      "storyIds": [
+        "story-017",
+        "story-025",
+        "story-030"
+      ],
+      "sourceCount": 6,
+      "aiSummary": "Several stories highlight a stronger focus on distribution, revenue and capital efficiency.",
+      "keyTakeaway": "Building a sustainable business is becoming increasingly important alongside growth.",
+      "explain": {
+        "title": "Explain this trend",
+        "answer": "These stories collectively suggest that startup strategy is increasingly balancing growth with sustainable economics."
+      }
+    }
+  ],
+
+  "filters": {
+    "defaultCategories": [
+      "ai",
+      "technology",
+      "startups",
+      "business",
+      "finance",
+      "science",
+      "sports",
+      "world"
+    ],
+    "sortOptions": [
+      "latest",
+      "mostRelevant",
+      "mostSources",
+      "category"
+    ],
+    "sourceTypes": [
+      "technology-publication",
+      "business-publication",
+      "financial-publication",
+      "science-publication",
+      "startup-publication",
+      "sports-publication",
+      "policy-publication",
+      "industry-publication"
+    ]
+  },
+
+  "uiContent": {
+    "emptyStates": {
+      "noStories": {
+        "title": "Nothing here yet",
+        "description": "Try changing your date, category, or keywords."
+      },
+      "noSearchResults": {
+        "title": "No stories found",
+        "description": "Try another keyword or remove a filter."
+      }
+    },
+    "explainButton": {
+      "label": "Explain this",
+      "description": "Understand why this matters and see the supporting sources."
+    },
+    "sourceLabel": "Sources",
+    "summaryLabel": "AI summary",
+    "confidenceLabel": "Confidence",
+    "keyPointsLabel": "Key points"
+  },
+
+  "sampleChat": {
+    "conversations": [
+      {
+        "id": "chat-001",
+        "title": "My Daily Brief",
+        "messages": [
+          {
+            "role": "assistant",
+            "content": "Good morning. Here are today's most relevant stories across AI, startups, technology and business.",
+            "storyIds": [
+              "story-001",
+              "story-002",
+              "story-003"
+            ]
+          },
+          {
+            "role": "user",
+            "content": "What is the biggest AI trend today?"
+          },
+          {
+            "role": "assistant",
+            "content": "The strongest theme is the shift toward AI agents and multi-step workflows. Several sources describe AI systems moving from answering questions toward completing tasks."
+          }
+        ]
+      }
+    ]
+  }
+}
