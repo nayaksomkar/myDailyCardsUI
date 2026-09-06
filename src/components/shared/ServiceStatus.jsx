@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import useServiceHealth from '../../hooks/useServiceHealth';
 
-function formatLatency(ms) {
-  if (ms == null) return '—';
+function formatLatency(ms, status) {
+  if (ms == null || status === 'offline' || status === 'timeout') return '—';
   if (ms < 1000) return `${ms}ms`;
   return `${(ms / 1000).toFixed(1)}s`;
 }
@@ -51,7 +51,7 @@ export default function ServiceStatus() {
                 </div>
                 <div className="service-status-value">
                   <span className={`service-status-text ${service.status}`}>{statusLabel(service.status)}</span>
-                  <span className="service-latency">{formatLatency(service.latencyMs)}</span>
+                  <span className="service-latency">{formatLatency(service.latencyMs, service.status)}</span>
                 </div>
               </div>
             ))}

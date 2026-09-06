@@ -48,11 +48,7 @@ export default function DiscoverPage({ onReadMore }) {
               className="discover-story-card"
               onClick={() => onReadMore(story.id)}
             >
-              {story.image && (
-                <div className="discover-story-image">
-                  <img src={story.image} alt={story.title} loading="lazy" />
-                </div>
-              )}
+              <div className={`discover-story-image gradient-${story.category || 'default'}`} />
               <div className="discover-story-content">
                 <SourceAvatar name={story.sources?.[0]?.name} size="sm" />
                 <h4 className="discover-story-title">{story.title}</h4>

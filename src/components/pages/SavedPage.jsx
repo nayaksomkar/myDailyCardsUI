@@ -35,11 +35,7 @@ export default function SavedPage({ savedIds, onReadMore, onRemove }) {
           const category = getCategoryById(story.category);
           return (
             <div key={story.id} className="saved-card" onClick={() => onReadMore(story.id)}>
-              {story.image && (
-                <div className="saved-card-image">
-                  <img src={story.image} alt={story.title} loading="lazy" />
-                </div>
-              )}
+              <div className={`saved-card-image gradient-${story.category || 'default'}`} />
               <div className="saved-card-content">
                 <div className="saved-card-header">
                   <span className="saved-card-category">{category?.name || story.category}</span>

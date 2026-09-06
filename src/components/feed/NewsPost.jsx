@@ -1,7 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PostSource from './PostSource';
 import PostActions from './PostActions';
 import AISummary from './AISummary';
+
+const categoryGradients = {
+  ai: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  technology: 'linear-gradient(135deg, #0093E9 0%, #80D0C7 100%)',
+  startups: 'linear-gradient(135deg, #F093FB 0%, #F5576C 100%)',
+  business: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+  finance: 'linear-gradient(135deg, #43E97B 0%, #38F9D7 100%)',
+  science: 'linear-gradient(135deg, #FA709A 0%, #FEE140 100%)',
+  sports: 'linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%)',
+  world: 'linear-gradient(135deg, #FFD194 0%, #FF7D6A 100%)',
+};
 
 export default function NewsPost({
   story,
@@ -10,33 +21,16 @@ export default function NewsPost({
   onToggleLike,
   onToggleSave,
   onShare,
-  onComment,
   onExplain,
   onOpenSources,
   onReadMore,
 }) {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [imageError, setImageError] = useState(false);
-
-  const hasImage = story.image && !imageError;
+  const gradient = categoryGradients[story.category] || categoryGradients.technology;
 
   return (
     <article className="news-post">
+      <div className="post-card-gradient" style={{ background: gradient }} />
       <PostSource story={story} />
-
-      {hasImage && (
-        <div className="post-image-container">
-          <div className={`post-image-skeleton ${imageLoaded ? 'hidden' : ''}`} />
-          <img
-            src={story.image}
-            alt={story.title}
-            className={`post-image ${imageLoaded ? 'loaded' : ''}`}
-            onLoad={() => setImageLoaded(true)}
-            onError={() => setImageError(true)}
-            loading="lazy"
-          />
-        </div>
-      )}
 
       <div className="post-content">
         <h3 className="post-title" onClick={() => onReadMore(story.id)}>
@@ -66,7 +60,6 @@ export default function NewsPost({
         isSaved={isSaved}
         onToggleLike={onToggleLike}
         onToggleSave={onToggleSave}
-        onComment={onComment}
         onShare={onShare}
       />
 

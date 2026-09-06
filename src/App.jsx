@@ -143,7 +143,6 @@ export default function App() {
                 onToggleLike={toggleLike}
                 onToggleSave={toggleSave}
                 onShare={() => {}}
-                onComment={handleComment}
                 onExplain={handleExplain}
                 onOpenSources={handleReadMore}
                 onReadMore={handleReadMore}

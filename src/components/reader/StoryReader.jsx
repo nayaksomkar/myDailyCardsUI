@@ -21,11 +21,7 @@ export default function StoryReader({ storyId, onClose, onExplain, onComment }) 
         </button>
 
         <div className="story-reader-scroll">
-          {story.image && (
-            <div className="story-reader-hero">
-              <img src={story.image} alt={story.title} />
-            </div>
-          )}
+          <div className={`story-reader-hero gradient-${story.category || 'default'}`} />
 
           <div className="story-reader-content">
             <div className="story-reader-source">

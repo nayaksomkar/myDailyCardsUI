@@ -3462,3 +3462,186 @@ body {
         transition: none;
     }
 }
+
+/* ============================================
+   Card Category Gradients (replaces images)
+   ============================================ */
+
+.post-card-gradient {
+    height: 6px;
+    width: 100%;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.story-reader-hero,
+.discover-story-image,
+.saved-card-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.gradient-ai,
+.discover-story-image.gradient-ai,
+.saved-card-image.gradient-ai {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-technology,
+.discover-story-image.gradient-technology,
+.saved-card-image.gradient-technology {
+    background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.gradient-startups,
+.discover-story-image.gradient-startups,
+.saved-card-image.gradient-startups {
+    background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);
+}
+
+.gradient-business,
+.discover-story-image.gradient-business,
+.saved-card-image.gradient-business {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.gradient-finance,
+.discover-story-image.gradient-finance,
+.saved-card-image.gradient-finance {
+    background: linear-gradient(135deg, #43E97B 0%, #38F9D7 100%);
+}
+
+.gradient-science,
+.discover-story-image.gradient-science,
+.saved-card-image.gradient-science {
+    background: linear-gradient(135deg, #FA709A 0%, #FEE140 100%);
+}
+
+.gradient-sports,
+.discover-story-image.gradient-sports,
+.saved-card-image.gradient-sports {
+    background: linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%);
+}
+
+.gradient-world,
+.discover-story-image.gradient-world,
+.saved-card-image.gradient-world {
+    background: linear-gradient(135deg, #FFD194 0%, #FF7D6A 100%);
+}
+
+.gradient-default,
+.discover-story-image.gradient-default,
+.saved-card-image.gradient-default {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+/* Story reader hero gradient */
+.story-reader-hero {
+    height: 200px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Discover/Saved card images */
+.discover-story-image {
+    height: 120px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.saved-card-image {
+    height: 100px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+/* ============================================
+   AI Summary - Key Points
+   ============================================ */
+
+.ai-summary-points {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+}
+
+.ai-summary-points li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.ai-summary-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+}
+
+.ai-explain-link {
+    margin-left: auto;
+    color: var(--accent-primary);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ============================================
+   Mobile Swipe Navigation
+   ============================================ */
+
+.swipe-container {
+    position: relative;
+    padding: 0 16px 16px;
+    touch-action: pan-x;
+}
+
+.swipe-card-wrapper {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.swipe-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.swipe-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: var(--border-primary);
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.swipe-dot.active {
+    background: var(--accent-primary);
+    width: 24px;
+    border-radius: 4px;
+}
+
+.swipe-hint {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-top: 12px;
+    letter-spacing: 0.02em;
+}
+
+/* Swipe animation states */
+.swipe-card-wrapper.swiping-up {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.swipe-card-wrapper.swiping-down {
+    transform: translateY(100%);
+    opacity: 0;
+}
