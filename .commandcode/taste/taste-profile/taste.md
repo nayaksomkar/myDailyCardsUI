@@ -1,0 +1,24 @@
+# Taste Profile
+- **Social-feed content model**: Prefers Instagram/Twitter/Reddit-style vertical scroll where each content piece is a visually significant card that "breathes" — not cramped grids or conventional list layouts. Confidence: 0.95
+- **Source as author**: Wants content sources to feel like social media authors — logo/avatar at top, name, time, domain — making provenance immediately obvious. Confidence: 0.9
+- **AI transparency**: AI-generated content should be clearly labeled (e.g., "✦ AI SUMMARY") and visually distinct from original source material. Confidence: 0.95
+- **Signature interactions**: Values a recognizable "Explain this" button as a recurring product differentiator across all content cards. Confidence: 0.85
+- **End-of-feed ritual**: When content ends, prefers a beautiful completion experience (stats, breathing room, gentle transitions) over a bare "no more items" message. Confidence: 0.9
+- **Boomerang/loop transitions**: Likes smooth animated transitions between content states (e.g., end of today → yesterday) rather than hard page changes. Confidence: 0.8
+- **Discussion as Reddit-style**: Comment threads should feel like Reddit (sorted, threaded, with likes/replies) rather than generic comment boxes. Confidence: 0.85
+- **Multi-source aggregation**: Values showing when multiple sources cover the same story, with agreement/disagreement analysis. Confidence: 0.8
+- **Warm caramel/coffee palette**: Prefers warm brown/cream/caramel accent colors over cool or neon palettes. Confidence: 0.9
+- **Editorial typography**: Uses serif fonts (Newsreader) for headlines and sans-serif (Inter) for UI — creates a magazine-meets-tech feel. Confidence: 0.85
+- **Soft, rounded UI**: Rounded cards (20px+ radius), subtle borders, soft shadows, smooth scrolling, sticky headers, blurred navigation. Confidence: 0.9
+- **Image-first content**: Every card should feature a prominent image (16:9 article thumbnails, hero images, source branding). Confidence: 0.9
+- **Light + dark themes**: Expects both with smooth transitions and theme-appropriate color adjustments. Confidence: 0.85
+- **SaaS/consumer startup feel**: Products should feel like polished consumer startups, not dashboards, admin panels, or static readers. Confidence: 0.9
+- **Frontend-first demos**: Prefers fully functional frontend-only implementations deployable to GitHub Pages before adding backend. Confidence: 0.9
+- **localStorage persistence**: Uses localStorage for demo-mode state (likes, saves, theme) when no backend exists. Confidence: 0.85
+- **React + Vite stack**: Default tooling for new projects. Confidence: 0.8
+- **Sample data enrichment**: Extends base data with demo-only fields (images, social counts, discussions) rather than leaving empty demonstrations. Confidence: 0.85
+- **Demo mode transparency**: Clearly labels demo/sample data with badges and messaging about free infrastructure limitations. Confidence: 0.8
+- **Detailed structured specs**: Provides comprehensive product specifications with ASCII art mockups, data models, and phased implementation plans. Confidence: 0.95
+- **Product references**: Frequently references existing products (Instagram, Twitter, Reddit, Apple News, ChatGPT, Perplexity) to communicate desired feel. Confidence: 0.9
+- **User-flow thinking**: Describes features as user journeys (open app → scroll → interact → reach end) rather than feature lists. Confidence: 0.85
+- **Visual hierarchy emphasis**: Explicitly states what should be visually dominant vs. subtle, and what to avoid (no dashboards, no neon, no cramped cards). Confidence: 0.9

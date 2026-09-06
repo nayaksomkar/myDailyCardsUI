@@ -4,7 +4,7 @@ let ready = false;
 export async function loadData() {
   if (ready) return rawData;
   try {
-    const response = await fetch('/sampledata.json');
+    const response = await fetch('./sampledata.json');
     if (!response.ok) throw new Error('Failed to load sampledata.json');
     rawData = await response.json();
     ready = true;
@@ -111,7 +111,9 @@ export function filterStories({ dayId, category, keywords, search, sourceType } 
   if (search && search.trim()) {
     const q = search.trim().toLowerCase();
     stories = stories.filter((s) => {
-      const haystack = `${s.title} ${s.subtitle || ''} ${s.summary || ''} ${s.shortSummary || ''} ${(s.keywords || []).join(' ')}`.toLowerCase();
+      const sourceNames = (s.sources || []).map((source) => `${source.name} ${source.domain || ''}`).join(' ');
+      const categoryName = s.category || '';
+      const haystack = `${s.title} ${s.subtitle || ''} ${s.summary || ''} ${s.shortSummary || ''} ${(s.keywords || []).join(' ')} ${categoryName} ${sourceNames}`.toLowerCase();
       return haystack.includes(q);
     });
   }

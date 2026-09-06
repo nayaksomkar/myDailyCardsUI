@@ -5,7 +5,10 @@
     "description": "A personalized seven-day AI news briefing with source-grounded summaries.",
     "themes": {
       "default": "dark",
-      "available": ["light", "dark"],
+      "available": [
+        "light",
+        "dark"
+      ],
       "accent": {
         "palette": "caramel-coffee",
         "primary": "#A66A3F",
@@ -16,58 +19,100 @@
       }
     }
   },
-
   "categories": [
     {
       "id": "ai",
       "name": "AI",
       "description": "Artificial intelligence, models, agents and AI companies",
-      "keywords": ["AI", "artificial intelligence", "LLM", "agents", "models"]
+      "keywords": [
+        "AI",
+        "artificial intelligence",
+        "LLM",
+        "agents",
+        "models"
+      ]
     },
     {
       "id": "technology",
       "name": "Technology",
       "description": "Technology, software, hardware and emerging technologies",
-      "keywords": ["technology", "software", "hardware", "cloud", "chips"]
+      "keywords": [
+        "technology",
+        "software",
+        "hardware",
+        "cloud",
+        "chips"
+      ]
     },
     {
       "id": "startups",
       "name": "Startups",
       "description": "Startups, founders, funding and venture capital",
-      "keywords": ["startup", "founder", "funding", "VC", "venture capital"]
+      "keywords": [
+        "startup",
+        "founder",
+        "funding",
+        "VC",
+        "venture capital"
+      ]
     },
     {
       "id": "business",
       "name": "Business",
       "description": "Companies, markets, strategy and business developments",
-      "keywords": ["business", "companies", "strategy", "markets"]
+      "keywords": [
+        "business",
+        "companies",
+        "strategy",
+        "markets"
+      ]
     },
     {
       "id": "finance",
       "name": "Finance",
       "description": "Markets, investing, economics and financial developments",
-      "keywords": ["finance", "stocks", "markets", "economy", "investing"]
+      "keywords": [
+        "finance",
+        "stocks",
+        "markets",
+        "economy",
+        "investing"
+      ]
     },
     {
       "id": "science",
       "name": "Science",
       "description": "Scientific discoveries, research and space",
-      "keywords": ["science", "research", "space", "biology"]
+      "keywords": [
+        "science",
+        "research",
+        "space",
+        "biology"
+      ]
     },
     {
       "id": "sports",
       "name": "Sports",
       "description": "Major sporting events and developments",
-      "keywords": ["sports", "cricket", "football", "tennis"]
+      "keywords": [
+        "sports",
+        "cricket",
+        "football",
+        "tennis"
+      ]
     },
     {
       "id": "world",
       "name": "World",
       "description": "Major international developments",
-      "keywords": ["world", "international", "politics", "geopolitics"]
+      "keywords": [
+        "world",
+        "international",
+        "politics",
+        "geopolitics"
+      ]
     }
   ],
-
   "keywords": [
     "AI",
     "startups",
@@ -85,7 +130,6 @@
     "robotics",
     "space"
   ],
-
   "days": [
     {
       "id": "day-1",
@@ -157,9 +201,43 @@
               "Multiple sources describe increased interest in multi-step AI workflows.",
               "The trend is appearing across software and business automation products."
             ]
-          }
+          },
+          "image": "https://picsum.photos/seed/ai-future-story-001/800/450",
+          "likes": 184,
+          "shares": 32,
+          "comments": 10,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+              "likes": 24,
+              "time": "2h"
+            },
+            {
+              "user": "maya_ai",
+              "avatar": "MA",
+              "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+              "likes": 18,
+              "time": "1h"
+            },
+            {
+              "user": "sam_tech",
+              "avatar": "ST",
+              "text": "The interesting part is how this changes SaaS product design fundamentally.",
+              "likes": 12,
+              "time": "45m"
+            },
+            {
+              "user": "jordan_r",
+              "avatar": "JR",
+              "text": "Been saying this for months. The interface layer is where all the value is.",
+              "likes": 8,
+              "time": "30m"
+            }
+          ]
         },
-
         {
           "id": "story-002",
           "type": "news_card",
@@ -208,9 +286,36 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Infrastructure businesses can benefit from the growing amount of compute and software required by AI applications, although they can also face high capital requirements."
-          }
+          },
+          "image": "https://picsum.photos/seed/pitch-deck-story-002/800/450",
+          "likes": 118,
+          "shares": 43,
+          "comments": 10,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "karen_vc",
+              "avatar": "KV",
+              "text": "From an investment perspective, this is where the smart money is flowing.",
+              "likes": 31,
+              "time": "3h"
+            },
+            {
+              "user": "mike_startup",
+              "avatar": "MS",
+              "text": "We are seeing this firsthand. Our customers want outcomes, not chatbots.",
+              "likes": 22,
+              "time": "2h"
+            },
+            {
+              "user": "priya_founder",
+              "avatar": "PF",
+              "text": "This validates what we have been building toward for the past year.",
+              "likes": 15,
+              "time": "1h"
+            }
+          ]
         },
-
         {
           "id": "story-003",
           "type": "news_card",
@@ -259,9 +364,50 @@
           "explain": {
             "title": "Why this matters",
             "answer": "For AI businesses, infrastructure efficiency directly affects operating costs. Improvements in performance per watt could make some AI workloads cheaper to run."
-          }
+          },
+          "image": "https://picsum.photos/seed/data-center-story-003/800/450",
+          "likes": 108,
+          "shares": 37,
+          "comments": 13,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "daniel_ai",
+              "avatar": "DA",
+              "text": "The infrastructure requirements for this are still massively underestimated.",
+              "likes": 27,
+              "time": "4h"
+            },
+            {
+              "user": "sarah_eng",
+              "avatar": "SE",
+              "text": "Engineering complexity is the real story here, not the models themselves.",
+              "likes": 19,
+              "time": "3h"
+            },
+            {
+              "user": "chris_product",
+              "avatar": "CP",
+              "text": "Product managers need to understand this shift. It changes everything.",
+              "likes": 14,
+              "time": "2h"
+            },
+            {
+              "user": "taylor_design",
+              "avatar": "TD",
+              "text": "The UX implications alone could be a whole conference talk.",
+              "likes": 9,
+              "time": "1h"
+            },
+            {
+              "user": "morgan_data",
+              "avatar": "MD",
+              "text": "Data quality becomes even more critical when agents are making decisions.",
+              "likes": 11,
+              "time": "45m"
+            }
+          ]
         },
-
         {
           "id": "story-004",
           "type": "news_card",
@@ -309,9 +455,36 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Lower launch costs can expand the number of commercial and scientific missions that are economically viable."
-          }
+          },
+          "image": "https://picsum.photos/seed/chemistry-lab-story-004/800/450",
+          "likes": 209,
+          "shares": 48,
+          "comments": 14,
+          "readingTime": "2 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "The chip efficiency angle is what most people are missing.",
+              "likes": 16,
+              "time": "5h"
+            },
+            {
+              "user": "jessica_hardware",
+              "avatar": "JH",
+              "text": "Power consumption per inference is the new benchmark that matters.",
+              "likes": 21,
+              "time": "4h"
+            },
+            {
+              "user": "ryan_compute",
+              "avatar": "RC",
+              "text": "We are redesigning our entire data center around this metric.",
+              "likes": 13,
+              "time": "3h"
+            }
+          ]
         },
-
         {
           "id": "story-005",
           "type": "news_card",
@@ -360,9 +533,36 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Changes in technology spending and financing conditions can influence how quickly startups and established companies invest in new products."
-          }
+          },
+          "image": "https://picsum.photos/seed/market-data-story-005/800/450",
+          "likes": 65,
+          "shares": 52,
+          "comments": 19,
+          "readingTime": "2 min",
+          "discussion": [
+            {
+              "user": "olivia_space",
+              "avatar": "OS",
+              "text": "Reusability is the only path to making space economically viable long-term.",
+              "likes": 28,
+              "time": "6h"
+            },
+            {
+              "user": "nasa_fan",
+              "avatar": "NF",
+              "text": "The engineering challenges here are fascinating. Materials science is key.",
+              "likes": 17,
+              "time": "5h"
+            },
+            {
+              "user": "astro_phys",
+              "avatar": "AP",
+              "text": "Lower launch costs directly enable more ambitious science missions.",
+              "likes": 22,
+              "time": "4h"
+            }
+          ]
         },
-
         {
           "id": "story-006",
           "type": "news_card",
@@ -410,11 +610,31 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Sports provide a useful example of how personalization and real-time information can make digital products more engaging."
-          }
+          },
+          "image": "https://picsum.photos/seed/championship-game-story-006/800/450",
+          "likes": 89,
+          "shares": 18,
+          "comments": 10,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "finance_wiz",
+              "avatar": "FW",
+              "text": "Market microstructure is changing faster than most realize.",
+              "likes": 19,
+              "time": "7h"
+            },
+            {
+              "user": "econ_prof",
+              "avatar": "EP",
+              "text": "The AI spending cycle is creating its own economic momentum.",
+              "likes": 25,
+              "time": "6h"
+            }
+          ]
         }
       ]
     },
-
     {
       "id": "day-2",
       "date": "2026-09-05",
@@ -479,7 +699,42 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Personalization can become a competitive advantage when it improves the customer's experience without adding unnecessary complexity."
-          }
+          },
+          "image": "https://picsum.photos/seed/office-building-story-007/800/450",
+          "likes": 173,
+          "shares": 24,
+          "comments": 13,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+              "likes": 24,
+              "time": "2h"
+            },
+            {
+              "user": "maya_ai",
+              "avatar": "MA",
+              "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+              "likes": 18,
+              "time": "1h"
+            },
+            {
+              "user": "sam_tech",
+              "avatar": "ST",
+              "text": "The interesting part is how this changes SaaS product design fundamentally.",
+              "likes": 12,
+              "time": "45m"
+            },
+            {
+              "user": "jordan_r",
+              "avatar": "JR",
+              "text": "Been saying this for months. The interface layer is where all the value is.",
+              "likes": 8,
+              "time": "30m"
+            }
+          ]
         },
         {
           "id": "story-008",
@@ -528,7 +783,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Not every AI product needs the largest available model. Smaller specialized models can improve margins and responsiveness."
-          }
+          },
+          "image": "https://picsum.photos/seed/ai-future-story-008/800/450",
+          "likes": 227,
+          "shares": 24,
+          "comments": 15,
+          "readingTime": "2 min",
+          "discussion": [
+            {
+              "user": "karen_vc",
+              "avatar": "KV",
+              "text": "From an investment perspective, this is where the smart money is flowing.",
+              "likes": 31,
+              "time": "3h"
+            },
+            {
+              "user": "mike_startup",
+              "avatar": "MS",
+              "text": "We are seeing this firsthand. Our customers want outcomes, not chatbots.",
+              "likes": 22,
+              "time": "2h"
+            },
+            {
+              "user": "priya_founder",
+              "avatar": "PF",
+              "text": "This validates what we have been building toward for the past year.",
+              "likes": 15,
+              "time": "1h"
+            }
+          ]
         },
         {
           "id": "story-009",
@@ -577,7 +860,49 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Supply-chain diversification can reduce dependence on a single supplier or geography, although it may increase short-term costs."
-          }
+          },
+          "image": "https://picsum.photos/seed/global-network-story-009/800/450",
+          "likes": 241,
+          "shares": 12,
+          "comments": 3,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "daniel_ai",
+              "avatar": "DA",
+              "text": "The infrastructure requirements for this are still massively underestimated.",
+              "likes": 27,
+              "time": "4h"
+            },
+            {
+              "user": "sarah_eng",
+              "avatar": "SE",
+              "text": "Engineering complexity is the real story here, not the models themselves.",
+              "likes": 19,
+              "time": "3h"
+            },
+            {
+              "user": "chris_product",
+              "avatar": "CP",
+              "text": "Product managers need to understand this shift. It changes everything.",
+              "likes": 14,
+              "time": "2h"
+            },
+            {
+              "user": "taylor_design",
+              "avatar": "TD",
+              "text": "The UX implications alone could be a whole conference talk.",
+              "likes": 9,
+              "time": "1h"
+            },
+            {
+              "user": "morgan_data",
+              "avatar": "MD",
+              "text": "Data quality becomes even more critical when agents are making decisions.",
+              "likes": 11,
+              "time": "45m"
+            }
+          ]
         },
         {
           "id": "story-010",
@@ -626,7 +951,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "A company's expected growth is important because investors often evaluate its valuation relative to future earnings."
-          }
+          },
+          "image": "https://picsum.photos/seed/market-data-story-010/800/450",
+          "likes": 113,
+          "shares": 9,
+          "comments": 27,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "The chip efficiency angle is what most people are missing.",
+              "likes": 16,
+              "time": "5h"
+            },
+            {
+              "user": "jessica_hardware",
+              "avatar": "JH",
+              "text": "Power consumption per inference is the new benchmark that matters.",
+              "likes": 21,
+              "time": "4h"
+            },
+            {
+              "user": "ryan_compute",
+              "avatar": "RC",
+              "text": "We are redesigning our entire data center around this metric.",
+              "likes": 13,
+              "time": "3h"
+            }
+          ]
         },
         {
           "id": "story-011",
@@ -676,11 +1029,38 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Building AI applications from specialized components can make systems more flexible than relying on one model for every task."
-          }
+          },
+          "image": "https://picsum.photos/seed/server-room-story-011/800/450",
+          "likes": 247,
+          "shares": 33,
+          "comments": 21,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "olivia_space",
+              "avatar": "OS",
+              "text": "Reusability is the only path to making space economically viable long-term.",
+              "likes": 28,
+              "time": "6h"
+            },
+            {
+              "user": "nasa_fan",
+              "avatar": "NF",
+              "text": "The engineering challenges here are fascinating. Materials science is key.",
+              "likes": 17,
+              "time": "5h"
+            },
+            {
+              "user": "astro_phys",
+              "avatar": "AP",
+              "text": "Lower launch costs directly enable more ambitious science missions.",
+              "likes": 22,
+              "time": "4h"
+            }
+          ]
         }
       ]
     },
-
     {
       "id": "day-3",
       "date": "2026-09-04",
@@ -705,13 +1085,13 @@
           "sourceCount": 3,
           "sources": [
             {
-            "id": "source-025",
-            "name": "Founder Journal",
-            "domain": "examplefounders.com",
-            "type": "startup-publication",
-            "publishedAt": "2026-09-04T18:00:00+05:30",
-            "url": "https://examplefounders.com/vertical-ai",
-            "credibility": "high"
+              "id": "source-025",
+              "name": "Founder Journal",
+              "domain": "examplefounders.com",
+              "type": "startup-publication",
+              "publishedAt": "2026-09-04T18:00:00+05:30",
+              "url": "https://examplefounders.com/vertical-ai",
+              "credibility": "high"
             },
             {
               "id": "source-026",
@@ -745,7 +1125,28 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Specialization allows a startup to solve a narrower problem deeply and potentially build proprietary workflow knowledge."
-          }
+          },
+          "image": "https://picsum.photos/seed/pitch-deck-story-012/800/450",
+          "likes": 215,
+          "shares": 53,
+          "comments": 14,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "finance_wiz",
+              "avatar": "FW",
+              "text": "Market microstructure is changing faster than most realize.",
+              "likes": 19,
+              "time": "7h"
+            },
+            {
+              "user": "econ_prof",
+              "avatar": "EP",
+              "text": "The AI spending cycle is creating its own economic momentum.",
+              "likes": 25,
+              "time": "6h"
+            }
+          ]
         },
         {
           "id": "story-013",
@@ -794,7 +1195,42 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Pricing structure affects both customer acquisition and recurring revenue, so businesses need to balance simplicity with monetization."
-          }
+          },
+          "image": "https://picsum.photos/seed/corporate-boardroom-story-013/800/450",
+          "likes": 194,
+          "shares": 52,
+          "comments": 22,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+              "likes": 24,
+              "time": "2h"
+            },
+            {
+              "user": "maya_ai",
+              "avatar": "MA",
+              "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+              "likes": 18,
+              "time": "1h"
+            },
+            {
+              "user": "sam_tech",
+              "avatar": "ST",
+              "text": "The interesting part is how this changes SaaS product design fundamentally.",
+              "likes": 12,
+              "time": "45m"
+            },
+            {
+              "user": "jordan_r",
+              "avatar": "JR",
+              "text": "Been saying this for months. The interface layer is where all the value is.",
+              "likes": 8,
+              "time": "30m"
+            }
+          ]
         },
         {
           "id": "story-014",
@@ -843,7 +1279,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Sustainable materials can become commercially relevant when they achieve comparable performance at a competitive cost."
-          }
+          },
+          "image": "https://picsum.photos/seed/chemistry-lab-story-014/800/450",
+          "likes": 163,
+          "shares": 5,
+          "comments": 22,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "karen_vc",
+              "avatar": "KV",
+              "text": "From an investment perspective, this is where the smart money is flowing.",
+              "likes": 31,
+              "time": "3h"
+            },
+            {
+              "user": "mike_startup",
+              "avatar": "MS",
+              "text": "We are seeing this firsthand. Our customers want outcomes, not chatbots.",
+              "likes": 22,
+              "time": "2h"
+            },
+            {
+              "user": "priya_founder",
+              "avatar": "PF",
+              "text": "This validates what we have been building toward for the past year.",
+              "likes": 15,
+              "time": "1h"
+            }
+          ]
         },
         {
           "id": "story-015",
@@ -892,11 +1356,52 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Sports analytics illustrates how large amounts of data can support human decision-making without completely replacing expert judgment."
-          }
+          },
+          "image": "https://picsum.photos/seed/athlete-training-story-015/800/450",
+          "likes": 116,
+          "shares": 40,
+          "comments": 27,
+          "readingTime": "2 min",
+          "discussion": [
+            {
+              "user": "daniel_ai",
+              "avatar": "DA",
+              "text": "The infrastructure requirements for this are still massively underestimated.",
+              "likes": 27,
+              "time": "4h"
+            },
+            {
+              "user": "sarah_eng",
+              "avatar": "SE",
+              "text": "Engineering complexity is the real story here, not the models themselves.",
+              "likes": 19,
+              "time": "3h"
+            },
+            {
+              "user": "chris_product",
+              "avatar": "CP",
+              "text": "Product managers need to understand this shift. It changes everything.",
+              "likes": 14,
+              "time": "2h"
+            },
+            {
+              "user": "taylor_design",
+              "avatar": "TD",
+              "text": "The UX implications alone could be a whole conference talk.",
+              "likes": 9,
+              "time": "1h"
+            },
+            {
+              "user": "morgan_data",
+              "avatar": "MD",
+              "text": "Data quality becomes even more critical when agents are making decisions.",
+              "likes": 11,
+              "time": "45m"
+            }
+          ]
         }
       ]
     },
-
     {
       "id": "day-4",
       "date": "2026-09-03",
@@ -953,7 +1458,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Better infrastructure abstractions can allow smaller teams to build sophisticated AI applications without managing every layer themselves."
-          }
+          },
+          "image": "https://picsum.photos/seed/cloud-computing-story-016/800/450",
+          "likes": 179,
+          "shares": 45,
+          "comments": 7,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "The chip efficiency angle is what most people are missing.",
+              "likes": 16,
+              "time": "5h"
+            },
+            {
+              "user": "jessica_hardware",
+              "avatar": "JH",
+              "text": "Power consumption per inference is the new benchmark that matters.",
+              "likes": 21,
+              "time": "4h"
+            },
+            {
+              "user": "ryan_compute",
+              "avatar": "RC",
+              "text": "We are redesigning our entire data center around this metric.",
+              "likes": 13,
+              "time": "3h"
+            }
+          ]
         },
         {
           "id": "story-017",
@@ -1002,7 +1535,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "A strong product still needs a repeatable way to reach customers. Considering distribution early can prevent building products without a viable acquisition path."
-          }
+          },
+          "image": "https://picsum.photos/seed/pitch-deck-story-017/800/450",
+          "likes": 185,
+          "shares": 49,
+          "comments": 7,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "olivia_space",
+              "avatar": "OS",
+              "text": "Reusability is the only path to making space economically viable long-term.",
+              "likes": 28,
+              "time": "6h"
+            },
+            {
+              "user": "nasa_fan",
+              "avatar": "NF",
+              "text": "The engineering challenges here are fascinating. Materials science is key.",
+              "likes": 17,
+              "time": "5h"
+            },
+            {
+              "user": "astro_phys",
+              "avatar": "AP",
+              "text": "Lower launch costs directly enable more ambitious science missions.",
+              "likes": 22,
+              "time": "4h"
+            }
+          ]
         },
         {
           "id": "story-018",
@@ -1060,7 +1621,28 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Regulation can affect how companies collect data, train models, deploy AI systems and communicate with customers."
-          }
+          },
+          "image": "https://picsum.photos/seed/world-map-story-018/800/450",
+          "likes": 73,
+          "shares": 36,
+          "comments": 19,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "finance_wiz",
+              "avatar": "FW",
+              "text": "Market microstructure is changing faster than most realize.",
+              "likes": 19,
+              "time": "7h"
+            },
+            {
+              "user": "econ_prof",
+              "avatar": "EP",
+              "text": "The AI spending cycle is creating its own economic momentum.",
+              "likes": 25,
+              "time": "6h"
+            }
+          ]
         },
         {
           "id": "story-019",
@@ -1109,11 +1691,45 @@
           "explain": {
             "title": "Why this matters",
             "answer": "The combination of online and offline experiences gives retailers more ways to reach customers and test new formats."
-          }
+          },
+          "image": "https://picsum.photos/seed/office-building-story-019/800/450",
+          "likes": 172,
+          "shares": 9,
+          "comments": 24,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+              "likes": 24,
+              "time": "2h"
+            },
+            {
+              "user": "maya_ai",
+              "avatar": "MA",
+              "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+              "likes": 18,
+              "time": "1h"
+            },
+            {
+              "user": "sam_tech",
+              "avatar": "ST",
+              "text": "The interesting part is how this changes SaaS product design fundamentally.",
+              "likes": 12,
+              "time": "45m"
+            },
+            {
+              "user": "jordan_r",
+              "avatar": "JR",
+              "text": "Been saying this for months. The interface layer is where all the value is.",
+              "likes": 8,
+              "time": "30m"
+            }
+          ]
         }
       ]
     },
-
     {
       "id": "day-5",
       "date": "2026-09-02",
@@ -1169,7 +1785,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Technology companies can attract significant investment, but investors ultimately need evidence that growth can translate into sustainable economics."
-          }
+          },
+          "image": "https://picsum.photos/seed/market-data-story-020/800/450",
+          "likes": 86,
+          "shares": 16,
+          "comments": 11,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "karen_vc",
+              "avatar": "KV",
+              "text": "From an investment perspective, this is where the smart money is flowing.",
+              "likes": 31,
+              "time": "3h"
+            },
+            {
+              "user": "mike_startup",
+              "avatar": "MS",
+              "text": "We are seeing this firsthand. Our customers want outcomes, not chatbots.",
+              "likes": 22,
+              "time": "2h"
+            },
+            {
+              "user": "priya_founder",
+              "avatar": "PF",
+              "text": "This validates what we have been building toward for the past year.",
+              "likes": 15,
+              "time": "1h"
+            }
+          ]
         },
         {
           "id": "story-021",
@@ -1218,7 +1862,49 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Enterprise customers often care as much about predictable behavior, security and monitoring as they do about raw model intelligence."
-          }
+          },
+          "image": "https://picsum.photos/seed/artificial-intelligence-story-021/800/450",
+          "likes": 53,
+          "shares": 42,
+          "comments": 26,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "daniel_ai",
+              "avatar": "DA",
+              "text": "The infrastructure requirements for this are still massively underestimated.",
+              "likes": 27,
+              "time": "4h"
+            },
+            {
+              "user": "sarah_eng",
+              "avatar": "SE",
+              "text": "Engineering complexity is the real story here, not the models themselves.",
+              "likes": 19,
+              "time": "3h"
+            },
+            {
+              "user": "chris_product",
+              "avatar": "CP",
+              "text": "Product managers need to understand this shift. It changes everything.",
+              "likes": 14,
+              "time": "2h"
+            },
+            {
+              "user": "taylor_design",
+              "avatar": "TD",
+              "text": "The UX implications alone could be a whole conference talk.",
+              "likes": 9,
+              "time": "1h"
+            },
+            {
+              "user": "morgan_data",
+              "avatar": "MD",
+              "text": "Data quality becomes even more critical when agents are making decisions.",
+              "likes": 11,
+              "time": "45m"
+            }
+          ]
         },
         {
           "id": "story-022",
@@ -1267,7 +1953,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Personalized medicine could make treatments more targeted, but translating research into clinical practice requires extensive validation."
-          }
+          },
+          "image": "https://picsum.photos/seed/space-station-story-022/800/450",
+          "likes": 78,
+          "shares": 23,
+          "comments": 8,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "The chip efficiency angle is what most people are missing.",
+              "likes": 16,
+              "time": "5h"
+            },
+            {
+              "user": "jessica_hardware",
+              "avatar": "JH",
+              "text": "Power consumption per inference is the new benchmark that matters.",
+              "likes": 21,
+              "time": "4h"
+            },
+            {
+              "user": "ryan_compute",
+              "avatar": "RC",
+              "text": "We are redesigning our entire data center around this metric.",
+              "likes": 13,
+              "time": "3h"
+            }
+          ]
         },
         {
           "id": "story-023",
@@ -1317,11 +2031,38 @@
           "explain": {
             "title": "Why this matters",
             "answer": "The broader opportunity is not just generating code but reducing friction across the entire software development lifecycle."
-          }
+          },
+          "image": "https://picsum.photos/seed/server-room-story-023/800/450",
+          "likes": 215,
+          "shares": 7,
+          "comments": 12,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "olivia_space",
+              "avatar": "OS",
+              "text": "Reusability is the only path to making space economically viable long-term.",
+              "likes": 28,
+              "time": "6h"
+            },
+            {
+              "user": "nasa_fan",
+              "avatar": "NF",
+              "text": "The engineering challenges here are fascinating. Materials science is key.",
+              "likes": 17,
+              "time": "5h"
+            },
+            {
+              "user": "astro_phys",
+              "avatar": "AP",
+              "text": "Lower launch costs directly enable more ambitious science missions.",
+              "likes": 22,
+              "time": "4h"
+            }
+          ]
         }
       ]
     },
-
     {
       "id": "day-6",
       "date": "2026-09-01",
@@ -1377,7 +2118,28 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Direct customer relationships can help young brands understand demand before committing to larger retail distribution."
-          }
+          },
+          "image": "https://picsum.photos/seed/strategy-meeting-story-024/800/450",
+          "likes": 186,
+          "shares": 42,
+          "comments": 7,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "finance_wiz",
+              "avatar": "FW",
+              "text": "Market microstructure is changing faster than most realize.",
+              "likes": 19,
+              "time": "7h"
+            },
+            {
+              "user": "econ_prof",
+              "avatar": "EP",
+              "text": "The AI spending cycle is creating its own economic momentum.",
+              "likes": 25,
+              "time": "6h"
+            }
+          ]
         },
         {
           "id": "story-025",
@@ -1426,7 +2188,42 @@
           "explain": {
             "title": "Why this matters",
             "answer": "A revenue-first approach can provide founders with more control, although it may limit how quickly the company can expand."
-          }
+          },
+          "image": "https://picsum.photos/seed/growth-chart-story-025/800/450",
+          "likes": 198,
+          "shares": 34,
+          "comments": 31,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+              "likes": 24,
+              "time": "2h"
+            },
+            {
+              "user": "maya_ai",
+              "avatar": "MA",
+              "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+              "likes": 18,
+              "time": "1h"
+            },
+            {
+              "user": "sam_tech",
+              "avatar": "ST",
+              "text": "The interesting part is how this changes SaaS product design fundamentally.",
+              "likes": 12,
+              "time": "45m"
+            },
+            {
+              "user": "jordan_r",
+              "avatar": "JR",
+              "text": "Been saying this for months. The interface layer is where all the value is.",
+              "likes": 8,
+              "time": "30m"
+            }
+          ]
         },
         {
           "id": "story-026",
@@ -1475,7 +2272,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Open ecosystems allow developers to experiment quickly and build specialized products without starting every component from scratch."
-          }
+          },
+          "image": "https://picsum.photos/seed/circuit-board-story-026/800/450",
+          "likes": 223,
+          "shares": 42,
+          "comments": 17,
+          "readingTime": "2 min",
+          "discussion": [
+            {
+              "user": "karen_vc",
+              "avatar": "KV",
+              "text": "From an investment perspective, this is where the smart money is flowing.",
+              "likes": 31,
+              "time": "3h"
+            },
+            {
+              "user": "mike_startup",
+              "avatar": "MS",
+              "text": "We are seeing this firsthand. Our customers want outcomes, not chatbots.",
+              "likes": 22,
+              "time": "2h"
+            },
+            {
+              "user": "priya_founder",
+              "avatar": "PF",
+              "text": "This validates what we have been building toward for the past year.",
+              "likes": 15,
+              "time": "1h"
+            }
+          ]
         },
         {
           "id": "story-027",
@@ -1524,11 +2349,52 @@
           "explain": {
             "title": "Why this matters",
             "answer": "Expanding internationally is not simply about finding customers; companies must also understand regulations, operations, logistics and local competition."
-          }
+          },
+          "image": "https://picsum.photos/seed/international-news-story-027/800/450",
+          "likes": 79,
+          "shares": 16,
+          "comments": 23,
+          "readingTime": "5 min",
+          "discussion": [
+            {
+              "user": "daniel_ai",
+              "avatar": "DA",
+              "text": "The infrastructure requirements for this are still massively underestimated.",
+              "likes": 27,
+              "time": "4h"
+            },
+            {
+              "user": "sarah_eng",
+              "avatar": "SE",
+              "text": "Engineering complexity is the real story here, not the models themselves.",
+              "likes": 19,
+              "time": "3h"
+            },
+            {
+              "user": "chris_product",
+              "avatar": "CP",
+              "text": "Product managers need to understand this shift. It changes everything.",
+              "likes": 14,
+              "time": "2h"
+            },
+            {
+              "user": "taylor_design",
+              "avatar": "TD",
+              "text": "The UX implications alone could be a whole conference talk.",
+              "likes": 9,
+              "time": "1h"
+            },
+            {
+              "user": "morgan_data",
+              "avatar": "MD",
+              "text": "Data quality becomes even more critical when agents are making decisions.",
+              "likes": 11,
+              "time": "45m"
+            }
+          ]
         }
       ]
     },
-
     {
       "id": "day-7",
       "date": "2026-08-31",
@@ -1593,7 +2459,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "As search becomes more conversational, the ability to provide accurate answers while maintaining source transparency becomes increasingly important."
-          }
+          },
+          "image": "https://picsum.photos/seed/artificial-intelligence-story-028/800/450",
+          "likes": 222,
+          "shares": 46,
+          "comments": 27,
+          "readingTime": "3 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "The chip efficiency angle is what most people are missing.",
+              "likes": 16,
+              "time": "5h"
+            },
+            {
+              "user": "jessica_hardware",
+              "avatar": "JH",
+              "text": "Power consumption per inference is the new benchmark that matters.",
+              "likes": 21,
+              "time": "4h"
+            },
+            {
+              "user": "ryan_compute",
+              "avatar": "RC",
+              "text": "We are redesigning our entire data center around this metric.",
+              "likes": 13,
+              "time": "3h"
+            }
+          ]
         },
         {
           "id": "story-029",
@@ -1642,7 +2536,35 @@
           "explain": {
             "title": "Why this matters",
             "answer": "A smaller market can be easier to understand and serve deeply, giving an early-stage company a clearer path to differentiation."
-          }
+          },
+          "image": "https://picsum.photos/seed/venture-capital-story-029/800/450",
+          "likes": 175,
+          "shares": 40,
+          "comments": 30,
+          "readingTime": "6 min",
+          "discussion": [
+            {
+              "user": "olivia_space",
+              "avatar": "OS",
+              "text": "Reusability is the only path to making space economically viable long-term.",
+              "likes": 28,
+              "time": "6h"
+            },
+            {
+              "user": "nasa_fan",
+              "avatar": "NF",
+              "text": "The engineering challenges here are fascinating. Materials science is key.",
+              "likes": 17,
+              "time": "5h"
+            },
+            {
+              "user": "astro_phys",
+              "avatar": "AP",
+              "text": "Lower launch costs directly enable more ambitious science missions.",
+              "likes": 22,
+              "time": "4h"
+            }
+          ]
         },
         {
           "id": "story-030",
@@ -1691,7 +2613,28 @@
           "explain": {
             "title": "Why this matters",
             "answer": "A startup that grows efficiently can have more flexibility when raising capital or navigating changes in market conditions."
-          }
+          },
+          "image": "https://picsum.photos/seed/market-data-story-030/800/450",
+          "likes": 214,
+          "shares": 40,
+          "comments": 32,
+          "readingTime": "6 min",
+          "discussion": [
+            {
+              "user": "finance_wiz",
+              "avatar": "FW",
+              "text": "Market microstructure is changing faster than most realize.",
+              "likes": 19,
+              "time": "7h"
+            },
+            {
+              "user": "econ_prof",
+              "avatar": "EP",
+              "text": "The AI spending cycle is creating its own economic momentum.",
+              "likes": 25,
+              "time": "6h"
+            }
+          ]
         },
         {
           "id": "story-031",
@@ -1740,12 +2683,46 @@
           "explain": {
             "title": "Why this matters",
             "answer": "More adaptable robots could expand automation beyond highly controlled industrial environments into more variable real-world settings."
-          }
+          },
+          "image": "https://picsum.photos/seed/tech-abstract-story-031/800/450",
+          "likes": 84,
+          "shares": 46,
+          "comments": 17,
+          "readingTime": "4 min",
+          "discussion": [
+            {
+              "user": "alex_dev",
+              "avatar": "AD",
+              "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+              "likes": 24,
+              "time": "2h"
+            },
+            {
+              "user": "maya_ai",
+              "avatar": "MA",
+              "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+              "likes": 18,
+              "time": "1h"
+            },
+            {
+              "user": "sam_tech",
+              "avatar": "ST",
+              "text": "The interesting part is how this changes SaaS product design fundamentally.",
+              "likes": 12,
+              "time": "45m"
+            },
+            {
+              "user": "jordan_r",
+              "avatar": "JR",
+              "text": "Been saying this for months. The interface layer is where all the value is.",
+              "likes": 8,
+              "time": "30m"
+            }
+          ]
         }
       ]
     }
   ],
-
   "storyClusters": [
     {
       "id": "cluster-001",
@@ -1762,7 +2739,40 @@
       "explain": {
         "title": "Explain this trend",
         "answer": "The stories are connected because they describe different parts of the same shift: smaller models, specialized products and autonomous agents are making AI applications more focused and useful."
-      }
+      },
+      "image": "https://picsum.photos/seed/cluster-cluster-001/800/450",
+      "likes": 105,
+      "shares": 97,
+      "discussion": [
+        {
+          "user": "alex_dev",
+          "avatar": "AD",
+          "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+          "likes": 24,
+          "time": "2h"
+        },
+        {
+          "user": "maya_ai",
+          "avatar": "MA",
+          "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+          "likes": 18,
+          "time": "1h"
+        },
+        {
+          "user": "sam_tech",
+          "avatar": "ST",
+          "text": "The interesting part is how this changes SaaS product design fundamentally.",
+          "likes": 12,
+          "time": "45m"
+        },
+        {
+          "user": "jordan_r",
+          "avatar": "JR",
+          "text": "Been saying this for months. The interface layer is where all the value is.",
+          "likes": 8,
+          "time": "30m"
+        }
+      ]
     },
     {
       "id": "cluster-002",
@@ -1779,10 +2789,42 @@
       "explain": {
         "title": "Explain this trend",
         "answer": "These stories collectively suggest that startup strategy is increasingly balancing growth with sustainable economics."
-      }
+      },
+      "image": "https://picsum.photos/seed/cluster-cluster-002/800/450",
+      "likes": 345,
+      "shares": 53,
+      "discussion": [
+        {
+          "user": "alex_dev",
+          "avatar": "AD",
+          "text": "This is probably the biggest shift in how we think about AI interfaces this year.",
+          "likes": 24,
+          "time": "2h"
+        },
+        {
+          "user": "maya_ai",
+          "avatar": "MA",
+          "text": "I think reliability is still the biggest blocker for enterprise adoption.",
+          "likes": 18,
+          "time": "1h"
+        },
+        {
+          "user": "sam_tech",
+          "avatar": "ST",
+          "text": "The interesting part is how this changes SaaS product design fundamentally.",
+          "likes": 12,
+          "time": "45m"
+        },
+        {
+          "user": "jordan_r",
+          "avatar": "JR",
+          "text": "Been saying this for months. The interface layer is where all the value is.",
+          "likes": 8,
+          "time": "30m"
+        }
+      ]
     }
   ],
-
   "filters": {
     "defaultCategories": [
       "ai",
@@ -1811,7 +2853,6 @@
       "industry-publication"
     ]
   },
-
   "uiContent": {
     "emptyStates": {
       "noStories": {
@@ -1832,7 +2873,6 @@
     "confidenceLabel": "Confidence",
     "keyPointsLabel": "Key points"
   },
-
   "sampleChat": {
     "conversations": [
       {

@@ -1,6 +1,6 @@
 import { loadData } from './data';
 
-const DEMO_MODE = import.meta.env.VITE_DEMO_MODE === 'true' || true;
+const DEMO_MODE = import.meta.env.VITE_DEMO_MODE !== 'false';
 const API_URL = import.meta.env.VITE_API_URL || '';
 
 export async function getHealth() {
@@ -186,7 +186,7 @@ export async function getSourcesSummary() {
       list,
     };
   }
-  const res = await fetch(`${API_URL}/sources');
+  const res = await fetch(`${API_URL}/sources`);
   if (!res.ok) throw new Error('Sources failed');
   return res.json();
 }
